@@ -7,8 +7,13 @@
 <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/materialize.css">
+ <link rel="stylesheet" type="text/css" href="css/behaviour.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
+<header class="codrops-header">
 <div class="cover">
 <video autoplay loop>
     <source src="img/bg.mp4" type="video/mp4">
@@ -20,7 +25,7 @@
     <div class="x_bg col s12 m12 l12 ">
     <div class="container">
     <div class="row">
-    <div class="header-bar col s12 m12 l12">
+        <div class="header-bar col s12 m12 l12" style="  padding-left: 100%;">
 <img src="img/logo-white.png">
     </div>
         <div class="cntr strapline col s12 m12 l12 ">
@@ -59,5 +64,19 @@
 
 </div>
 
+
+</header>
+            <nav id="bt-menu" class="bt-menu">
+                <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                <ul>
+                    <li><a href="#" class="bt-icon icon-zoom">Zoom</a></li>
+                    <li><a href="#" class="bt-icon icon-refresh">Refresh</a></li>
+                    <li><a href="#" class="bt-icon icon-lock">Lock</a></li>
+                    <li><a href="#" class="bt-icon icon-speaker">Sound</a></li>
+                    <li><a href="#" class="bt-icon icon-star">Favorite</a></li>
+                </ul>
+            </nav>
+<script src="js/classie.js"></script>
+    <script src="js/borderMenu.js"></script>
 </body>
 </html>
