@@ -5213,6 +5213,11 @@ nav ul a span.badge {
       .row .col.l6 {
         width: 50%;
         margin-left: 0; }
+
+ .row .col.lcust {
+        width: 48%;
+        margin-left: 10px; }
+
       .row .col.l7 {
         width: 58.33333%;
         margin-left: 0; }
