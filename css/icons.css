@@ -16,7 +16,11 @@
   src:url('../fonts/demoicons/FontAwesome.eot?#iefix') format('embedded-opentype'),
     url('../fonts/demoicons/FontAwesome.woff') format('woff'),
     url('../fonts/demoicons/FontAwesome.ttf') format('truetype'),
-    url('../fonts/demoicons/FontAwesome.svg#FontAwesome') format('svg');
+    url('../fonts/demoicons/FontAwesome.svg#FontAwesome') format('svg'),
+      url('fa/fonts/FontAwesome.woff') format('woff'),
+      url('fa/fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('fa/fonts/FontAwesome.otf');
+
   font-weight: normal;
   font-style: normal;
 }
@@ -48,8 +52,12 @@
   content: "\e002";
 }
 
+.icon-industry:before{
+    content: "\f275";
+}
+
 .icon-home:before {
-  content: "\e003";
+  content: "\f016";
 }
 
 .icon-calendar:before {
