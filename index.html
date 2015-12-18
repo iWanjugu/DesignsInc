@@ -10,12 +10,14 @@
  <link rel="stylesheet" type="text/css" href="css/behaviour.css" />
         <link rel="stylesheet" type="text/css" href="css/icons.css" />
         <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" type="text/css" href=" css/animate.css">
         <script src="js/modernizr.custom.js"></script>
+        <script src="js/custom.js"></script>
 </head>
 <body>
 <header class="codrops-header">
 <div class="cover">
-<video autoplay loop>
+<video autoplay loop id="vid">
     <source src="img/bg.mp4" type="video/mp4">
  
 </video>
@@ -25,29 +27,29 @@
     <div class="x_bg col s12 m12 l12 ">
     <div class="container">
     <div class="row">
-        <div class="header-bar col s12 m12 l12" style="  padding-left: 100%;">
+        <div class="header-bar col s12 m12 l12" style=" padding-left: 75%;padding-top: 12px;">
 <img src="img/logo-white.png">
     </div>
         <div class="cntr strapline col s12 m12 l12 ">
         
         <p class="col s12 m12 l12">  
-        <span class="shade1">   Welcome to  moringa Devshop </span>
-        <span class="shade1"></span>
+        <span class="shade1 animated flash  infinite  ">   Welcome to  moringa Devshop </span>
 
+</p>
       
 <br>
-<span class="slogan col s12 m12 l12">
-<span class="shade3">Imagine,</span>
+<div class="slogan col s12 m12 l12">
+<span class="shade4">Imagine,</span>
 <span class="shade4"> Design, </span>
-<span class="shade5"> Develop </span>
+<span class="shade4"> Develop </span>
 
 
 
 
 
- </span>
-        </p>
-        <p class=" btntour col s5 l5 m5" style="margin-left: 25%;">
+ </div>
+
+        <p onclick="goportofolio()" class=" btntour col s5 l5 m5" style="margin-left: 25%;">
        Start Tour
         </p>
         </div>
@@ -69,13 +71,15 @@
             <nav id="bt-menu" class="bt-menu">
                 <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
                 <ul>
-                    <li><a href="#" class="bt-icon icon-zoom">Zoom</a></li>
-                    <li><a href="#" class="bt-icon icon-refresh">Refresh</a></li>
-                    <li><a href="#" class="bt-icon icon-lock">Lock</a></li>
-                    <li><a href="#" class="bt-icon icon-speaker">Sound</a></li>
-                    <li><a href="#" class="bt-icon icon-star">Favorite</a></li>
+                    <li onclick="gohome()"><a href="#"><img src="img/house34(1).png"></a></li>
+                    <li onclick="goportofolio()"><a href="#" ><img src="img/briefcase69(2).png"></a></li>
+                    <li onclick="gocontact()"><a href="#" > <img src="img/phone(2)"></a></li>
+
                 </ul>
             </nav>
+  <script>
+    document.getElementById('vid').play();
+</script>
 <script src="js/classie.js"></script>
     <script src="js/borderMenu.js"></script>
 </body>
