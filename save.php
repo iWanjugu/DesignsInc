@@ -3,14 +3,14 @@
 		if (isset($_POST['submit']))
 		{
 error_reporting(E_ERROR | E_PARSE);
-$database_hostname = "localhost";
-$database_username = "root";
-$database_password = "";
+$database_hostname = "xxxxxxx";
+$database_username = "xxxxxxx";
+$database_password = "xxxxxxxxxxxxxx";
 
 
-$main_database = "laikiana_db";
+$main_database = "xxxxx";
 mysql_connect($database_hostname,$database_username,$database_password);
-mysql_select_db("laikiana_db");
+mysql_select_db("xxxxxxxx");
 
 
 			//This makes sure they did not leave any fields blank
@@ -25,7 +25,7 @@ mysql_select_db("laikiana_db");
 			}
 
 			$usercheck = $_POST['mail_to'];
-			$check = mysql_query("SELECT email FROM um_laikiana WHERE coname = '$usercheck' OR  email = '$usercheck' OR  pname = '$usercheck'") or die(mysql_error());
+			$check = mysql_query("SELECT email FROM xxxxx WHERE coname = '$usercheck' OR  email = '$usercheck' OR  pname = '$usercheck'") or die(mysql_error());
 			$check2 = mysql_num_rows($check);
 
 			//if the name exists it gives an error
@@ -45,7 +45,7 @@ mysql_select_db("laikiana_db");
 
 
 			// now we insert it into the database
-			$query_upload = "INSERT INTO mail (mail_from, mail_to, mail_subject,mail_body,mail_sent) VALUES ('$email', '".$_POST['mail_to']."', '".$_POST['mail_subject']."','".$_POST['mail_body']."', '".date("Y-m-d H:i:s")."')";
+			$query_upload = "INSERT INTO xxxxxxx (mail_from, mail_to, mail_subject,mail_body,mail_sent) VALUES ('$email', '".$_POST['mail_to']."', '".$_POST['mail_subject']."','".$_POST['mail_body']."', '".date("Y-m-d H:i:s")."')";
 
 				mysql_query($query_upload) or die("error in $query_upload == ----> ".mysql_error());
 				if($result) { ?>
