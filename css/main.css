@@ -16,7 +16,7 @@ Anders.ttf
 
 h1, h2, h3, h4, a { color: #636; font-family: 'Amaranth', sans-serif;}
 body {
-
+overflow-y: hidden;
   color: #555;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background: url(../img/bg.svg) #000 no-repeat center center fixed;
@@ -67,7 +67,7 @@ video{
   text-align: center;
 }
 .x_bg{ background: url(../img/pattern_stripe.png);
-height: 100%;
+height: 700px;
    -webkit-linear-gradient(transparent, transparent);
    -webkit-background-clip: text;
     color: transparent;
@@ -138,12 +138,15 @@ hr {
   color: #999;
 }
 @media screen and (max-width: 768px) {
+    body{overflow-y: visible;}
   video{ visibility:hidden;}
   #logo{width: 200px; height: 200px; margin: 30px auto;}
   #vCent{width: 200px; height: 200px;}
   #vCent h1{font-size:3em;}
   .strapline{font-size:2em;}
 }
+
+
 .cover{
   width: 100%;
   height: 100%;
