@@ -34,7 +34,7 @@ video{
   height:auto;
   z-index:-100;
   visibility: visible;
-  background: url(img/x.png);
+  background: url(img/pattern_stripe.png);
 
 }
 #logo{
@@ -65,7 +65,7 @@ video{
   font-family: BIGJOHN;
   text-align: center;
 }
-.x_bg{ background: url(../img/x.png);
+.x_bg{ background: url(../img/pattern_stripe.png);
 height: 100%;
    -webkit-linear-gradient(transparent, transparent);
    -webkit-background-clip: text;
@@ -127,7 +127,7 @@ hr {
   float: right;
 }
 .dark2_bg {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(45,45,45,0)), color-stop(100%,rgba(45,45,45,0.8))), url(images/x.png);;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(45,45,45,0)), color-stop(100%,rgba(45,45,45,0.8))), url(images/pattern_stripe.png);;
 }
 .dark{
   background: #222;
@@ -137,6 +137,7 @@ hr {
   color: #999;
 }
 @media screen and (max-width: 768px) {
+    .project-pic{width: 100%;margin-left: 0%;}
   video{ visibility:hidden;}
   #logo{width: 200px; height: 200px; margin: 30px auto;}
   #vCent{width: 200px; height: 200px;}
@@ -146,7 +147,7 @@ hr {
 .cover{
   width: 100%;
   height: 100%;
-  background: url(../img/x.png);
+  background: url(../img/pattern_stripe.png);
 
 }
 .header-bar{
