@@ -19,7 +19,7 @@ body {
 overflow-y: hidden;
   color: #555;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background: url(../img/bg.svg) #000 no-repeat center center fixed;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMklEQVQYlWNgYGAwZkAFxjjEcApgSOKTIGgSVpOxKcKqmGiFRFuNUwCHGFaT8erCGuAAtV8HLQ/j6goAAAAASUVORK5CYII=) #000 no-repeat center center fixed;
   -webkit-background-size: cover;
 height: 500px;
   background-size: cover;
@@ -166,6 +166,7 @@ hr {
   border:1px solid white;
   height: auto;
   cursor: pointer;
+    font-family: slimjoe;
 
 }
 .btntour:hover{
@@ -260,8 +261,8 @@ transform-origin: 50% 50% 0;
 }
 .shade4{
 color: #000;
-  font-weight: bolder;
-  display: inline-block;
+font-weight: bolder;
+display: inline-block;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
@@ -269,6 +270,8 @@ float: none;
 z-index: auto;
 width: auto;
 height: auto;
+    text-align: left;
+  line-height: 1.5em;   
 position: static;
 cursor: default;
 margin: 0;
@@ -277,12 +280,11 @@ overflow: visible;
 border: none;
 -webkit-border-radius: 0;
 border-radius: 0;
-
+font-size: 10px;
 text-decoration: normal;
 text-align: center;
 -o-text-overflow: clip;
 text-overflow: clip;
-white-space: pre;
 background: none;
 -webkit-box-shadow: none;
 box-shadow: none;

@@ -17,7 +17,7 @@
 <body>
 <header class="codrops-header">
 <div class="cover">
-<video autoplay loop>
+<video autoplay loop id="vid">
     <source src="img/bg2.mp4" type="video/mp4">
  
 </video>
@@ -137,7 +137,7 @@
         </div>
         </div>
     </div>
-</div>
+
 <div  class="copyright col s12 m12 l12">
 <div class="container">
 <div class="row">
@@ -147,7 +147,8 @@
 </div>
 
 </div>
-
+        </div>
+</div>
 </header>
             <nav id="bt-menu" class="bt-menu">
                 <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -160,6 +161,9 @@
             </nav>
     
     </body>
+     <script>
+    document.getElementById('vid').play();
+</script>
     <script src="js/classie.js"></script>
     <script src="js/borderMenu.js"></script>
 </body>
