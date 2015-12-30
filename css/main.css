@@ -19,10 +19,15 @@ body {
 overflow-y: hidden;
   color: #555;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+<<<<<<< HEAD
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAMklEQVQYlWNgYGAwZkAFxjjEcApgSOKTIGgSVpOxKcKqmGiFRFuNUwCHGFaT8erCGuAAtV8HLQ/j6goAAAAASUVORK5CYII=) #000 no-repeat center center fixed;
   -webkit-background-size: cover;
 height: 500px;
   background-size: cover;
+=======
+  background: url(../img/bg.jpg) #000 no-repeat center center fixed;
+
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
  max-height: 100%;
 }
 
@@ -44,7 +49,7 @@ video{
   padding: 20px;
   text-align: center;
   border-radius: 50%;
-  background: url(images/thick_stripe.png);
+  background: url(images/pattern_stripe.png);
 }
 #vCent{
   display: table;
@@ -65,9 +70,15 @@ video{
   font-size: 2.5em;
   font-family: BIGJOHN;
   text-align: center;
+<<<<<<< HEAD
 }
 .x_bg{ background: url(../img/pattern_stripe.png);
 height: 700px;
+=======
+}stripe
+.x_bg{ background: url(../img/pattern_stripe.png);
+height: 100%;
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
    -webkit-linear-gradient(transparent, transparent);
    -webkit-background-clip: text;
     color: transparent;
@@ -166,7 +177,10 @@ hr {
   border:1px solid white;
   height: auto;
   cursor: pointer;
+<<<<<<< HEAD
     font-family: slimjoe;
+=======
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 
 }
 .btntour:hover{
@@ -203,7 +217,10 @@ text-decoration: normal;
 text-align: center;
 -o-text-overflow: clip;
 text-overflow: clip;
+<<<<<<< HEAD
 /*white-space: pre;*/
+=======
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 background: none;
 -webkit-box-shadow: none;
 box-shadow: none;
@@ -261,8 +278,13 @@ transform-origin: 50% 50% 0;
 }
 .shade4{
 color: #000;
+<<<<<<< HEAD
 font-weight: bolder;
 display: inline-block;
+=======
+  font-weight: bolder;
+  display: inline-block;
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
@@ -270,8 +292,11 @@ float: none;
 z-index: auto;
 width: auto;
 height: auto;
+<<<<<<< HEAD
     text-align: left;
   line-height: 1.5em;   
+=======
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 position: static;
 cursor: default;
 margin: 0;
@@ -280,11 +305,19 @@ overflow: visible;
 border: none;
 -webkit-border-radius: 0;
 border-radius: 0;
+<<<<<<< HEAD
 font-size: 10px;
+=======
+
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 text-decoration: normal;
 text-align: center;
 -o-text-overflow: clip;
 text-overflow: clip;
+<<<<<<< HEAD
+=======
+white-space: pre;
+>>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
 background: none;
 -webkit-box-shadow: none;
 box-shadow: none;
