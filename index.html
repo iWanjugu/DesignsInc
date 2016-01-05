@@ -12,10 +12,18 @@
         <link rel="stylesheet" type="text/css" href="css/style2.css" />
         <link rel="stylesheet" type="text/css" href=" css/animate.css">
         <script src="js/modernizr.custom.js"></script>
-        <script src="js/custom.js"></script>
+        <link rel="stylesheet" href="styles/buttons/css/component.css">
+        <link rel="stylesheet" href="styles/buttons/css/default.css">
+       <script src="styles/buttons/js/modernizr.custom.js"></script>
+       <link rel="stylesheet" href="styles/svg/css/component.css"> 
+       <link rel="stylesheet" href="css/svgdrawing.css">
+       <script src="js/custom.js"></script>
+        
+        
+        <link rel="stylesheet" href="css/component.css">
 </head>
-<body class="animated rollin" style=" ">
-<header class="codrops-header">
+<body>
+<header class="codrops-header" style="height:650px;">
 <div class="cover">
 <video autoplay loop id="vid">
     <source src="img/bg.mp4" type="video/mp4">
@@ -24,54 +32,45 @@
 
 
 
-    <div class="x_bg col s12 m12 l12 " style="height:600px">
+    <div class="x_bg col s12 m12 l12 ">
     <div class="container">
     <div class="row">
         <div class="header-bar col s12 m12 l12" style=" padding-left: 75%;padding-top: 12px;">
-<<<<<<< HEAD
-
-    </div>
-        <div class="cntr strapline col s12 m12 l12 ">
-        <div class="col s12 m12 l12"><img src="img/logo-white.png"></div>
-     
-        <div class="shade1 col s12 m12 l12  animated flash  infinite  ">   Moringa Devshop </div>
-
-=======
-<img src="img/logo-white.png">
+<
     </div>
         <div class="cntr strapline col s12 m12 l12 ">
         
-        <p class="col s12 m12 l12">  
-        <span class="shade1 animated flash  infinite  ">   Welcome to  moringa Devshop </span>
+        <div class="col s12 m12 l12"><img src="img/logo-white.png">   </div>
+        
+        
+        <div class="col s12 m12 l12">  
+        <span class="shade1 animated flash  infinite  ">Moringa Devshop </span>
 
-</p>
+</div>
       
 <br>
 <div class="slogan col s12 m12 l12">
-<span class="shade4">Imagine,</span>
-<span class="shade4"> Design, </span>
-<span class="shade4"> Develop </span>
->>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
+<span class="shade4">We are a Kenyan based software development firm, creating software that fulfill your goals and needs</span>
 
-      
-<div class="slogan col s12 m12 l12">
-<span class="shade4 col s6 m6 l6">We at moringa devshop, we are a group of software developers that believe in providing quality and timely software that abide to all good practices</span>
+
 
 
 
  </div>
-
-<<<<<<< HEAD
-=======
- </div>
-
->>>>>>> 77820cd33bd615174c178eda7496411734c93e1c
-        <p onclick="goportofolio()" class=" btntour col s5 l5 m5" style="margin-left: 25%;">
-       Start Tour
-        </p>
+ 
+<section id="btn-click">
+			
+			
+				
+					<button onclick="goportofolio()" class="btn btn-7 btn-7c btn-icon-only ">Let's Begin</button>
+				
+			
+			</section>
+     
         </div>
         </div>
     </div>
+</div>
 <div  class="copyright col s12 m12 l12">
 <div class="container">
 <div class="row">
@@ -82,8 +81,6 @@
 
 </div>
 
-    </div>
-    </div>
 
 </header>
             <nav id="bt-menu" class="bt-menu">
@@ -95,10 +92,46 @@
 
                 </ul>
             </nav>
+            <script src="styles/svg/js/classie.js"></script>
+            <script src="styles/svg/js/svganimations2.js"></script>
   <script>
     document.getElementById('vid').play();
 </script>
 <script src="js/classie.js"></script>
+   <script src="styles/buttons/js/classie.js"></script>
     <script src="js/borderMenu.js"></script>
+    <script>
+			var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+				buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+				totalButtons7Click = buttons7Click.length,
+				totalButtons9Click = buttons9Click.length;
+
+			buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, true ); } );
+			buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+			function activate() {
+				var self = this, activatedClass = 'btn-activated';
+
+				if( classie.has( this, 'btn-7h' ) ) {
+					// if it is the first of the two btn-7h then activatedClass = 'btn-error';
+					// if it is the second then activatedClass = 'btn-success'
+					activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+				}
+				else if( classie.has( this, 'btn-8g' ) ) {
+					// if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+					// if it is the second then activatedClass = 'btn-error3d'
+					activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+				}
+
+				if( !classie.has( this, activatedClass ) ) {
+					classie.add( this, activatedClass );
+					setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+				}
+			}
+
+			document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+			}, false );
+		</script>
 </body>
 </html>
