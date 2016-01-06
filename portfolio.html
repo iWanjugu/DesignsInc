@@ -13,7 +13,21 @@
         <link rel="stylesheet" type="text/css" href="css/style2.css" />
         <script src="js/modernizr.custom.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/jquery.min.js"></script>
 </head>
+<script>
+
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.se-pre').fadeOut('slow', function () {
+            });
+        },3000);
+
+    });
+});
+    </script>
+    <div class="se-pre"></div>
 <body>
 <header class="codrops-header">
 <div class="cover">

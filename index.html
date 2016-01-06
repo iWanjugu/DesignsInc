@@ -18,12 +18,34 @@
        <link rel="stylesheet" href="styles/svg/css/component.css"> 
        <link rel="stylesheet" href="css/svgdrawing.css">
        <script src="js/custom.js"></script>
-        
-        
-        <link rel="stylesheet" href="css/component.css">
+       <script src="js/jquery.min.js"></script>
+       <link rel="stylesheet" href="css/anime.css">
+       <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="js/webcomponents.min.js"></script>
+        <script src="js/require.js"></script>
+        <link async rel="import" href="build1896.html?v=59"/>
+     
 </head>
-<body>
+
+<script>
+
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.se-pre-con').fadeOut('slow', function () {
+            });
+        },3000);
+
+    });
+});
+    </script>
+    <div class="se-pre"></div>
+<body class="page-exit animating">
+
 <header class="codrops-header" style="height:650px;">
+
+
+
 <div class="cover">
 <video autoplay loop id="vid">
     <source src="img/bg.mp4" type="video/mp4">
@@ -40,29 +62,39 @@
     </div>
         <div class="cntr strapline col s12 m12 l12 ">
         
-        <div class="col s12 m12 l12"><img src="img/logo-white.png">   </div>
+        <div class="col s12 m12 l12"><img class="slideExpandUp" src="img/logo-white.png">   </div>
         
         
         <div class="col s12 m12 l12">  
-        <span class="shade1 animated flash  infinite  ">Moringa Devshop </span>
+        <span class="shade1 animated flash  infinite   ">Moringa Devshop </span>
 
 </div>
       
 <br>
 <div class="slogan col s12 m12 l12">
-<span class="shade4">We are a Kenyan based software development firm, creating software that fulfill your goals and needs</span>
+<span class="shade4 stretchLeft">
+<span></span>
+
+ We are a Kenyan based software development firm, <br>creating software that fulfill your goals and needs</span>
 
 
 
 
 
  </div>
+ <br>
  
 <section id="btn-click">
 			
 			
 				
-					<button onclick="goportofolio()" class="btn btn-7 btn-7c btn-icon-only ">Let's Begin</button>
+					<p>
+					  
+
+ <awesome-button onclick="goportofolio()" id="destroy-button"  width="242" progress="true"  size="large" success="All set!">Find out more</awesome-button>
+
+					</p>
+					 
 				
 			
 			</section>
@@ -71,6 +103,7 @@
         </div>
     </div>
 </div>
+<!--
 <div  class="copyright col s12 m12 l12">
 <div class="container">
 <div class="row">
@@ -81,7 +114,9 @@
 
 </div>
 
-
+        </div>
+-->
+    </div>
 </header>
             <nav id="bt-menu" class="bt-menu">
                 <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -133,5 +168,36 @@
 				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
 			}, false );
 		</script>
+		
+		<script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+<script src="js/wow.js"></script>
 </body>
 </html>
