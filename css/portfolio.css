@@ -50,17 +50,19 @@ video{
   overflow: hidden;
 }
 #vCent h1{
-  font-family: 'Amaranth', sans-serif;
   display: table-cell; vertical-align: middle;
   font-size:5em;
   letter-spacing:.02em;
   line-height: .8em;
   color: #636;
 }
+.header3{
+   font-size: 20px; 
+    font-family: slimjoe;
+}
 .strapline{
   padding: 20px 0;
   color: #fff;
-  font-size: 2.5em;
   font-family: BIGJOHN;
   text-align: center;
 }
