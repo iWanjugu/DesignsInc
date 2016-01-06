@@ -280,13 +280,12 @@ line-height: 1em;
 */
 }
 .project-pic{
-  height: 200px;
   cursor: pointer;
-  filter: brightness(70%);
--webkit-filter: brightness(70%);
--moz-filter: brightness(70%);
--o-filter: brightness(70%);
--ms-filter: brightness(70%);
+  filter: brightness(30%);
+-webkit-filter: brightness(30%);
+-moz-filter: brightness(30%);
+-o-filter: brightness(30%);
+-ms-filter: brightness(30%);
 }
 .project-pic:hover{
   background-image: url(../img/bg.svg);
