@@ -17,6 +17,8 @@
         <script src="js/mcust.js"></script>
         <script src="js/toucheffects.js"></script>
         <link rel="stylesheet" href="css/hover.css">
+        <script src="js/wow.js"></script>
+        <link rel="stylesheet" href="css/animate.css">
 </head>
 <script>
 
@@ -45,20 +47,23 @@
 
     <div class="container">
     <div class="row">
+<!--
     <div class="header-bar col s12 m12 l12" style="  padding-left: 100%;">
 <img src="img/logo-white.png" style="padding-top:20px;">
     </div>
+-->
         <div class="cntr strapline col s12 m12 l12 ">
-
+            <div class="col s12 m12 l12"><img src="img/logo-white.png"  style="padding-top:55px;"> </div>
 <div class="project_title col s12 m12 l12">
-<span class="page-title col s12 m12 l12">Our projects</span>
+<span class="page-title col s12 m12 l12" style="font-size:30px; margin-bottom:10px;">Our projects</span>
 <br>
-<span class="intro-text col s12 m12 l12">At Moringa DevShop, we value excellence and timeliness in our work. Here, you can check out what we've built for world-class clients.</span>
+<span class="intro-text shade4 col s12 m12 l12">At Moringa DevShop, we value excellence and timeliness in our work. Here, you can check out what we've built for world-class clients.</span>
 
 </div>
 
 <ul class="grid cs-style-7">
-				<li>
+           
+				<li class="wow slideInLeft" data-wow-duration="10s">
 					<figure>
 						<img src="img/ihub_screen.png" alt="" height="300" width="400">
 						<figcaption>
@@ -70,7 +75,7 @@
 				</li>
 				
 			
-			<li>
+			<li class="wow bounceInRight pulse" data-wow-duration="10s">
 					<figure>
 						<img src="img/insideout.png" alt="" height="300" width="400">
 						<figcaption>
@@ -105,7 +110,7 @@
 				
 					<li>
 					<figure>
-						<img src="img/qfilemanager.png" alt="" height="300" width="400">
+						<img src="img/hirezippy_screen.png" alt="" height="300" width="400">
 						<figcaption>
 							<h3 class="header3">Hire Zippy</h3>
 							<span>Moringa Devshop</span>
@@ -162,5 +167,22 @@
 </script>
     <script src="js/classie.js"></script>
     <script src="js/borderMenu.js"></script>
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
 </body>
 </html>
