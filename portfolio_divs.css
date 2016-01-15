@@ -54,7 +54,8 @@ html, body {
 
 h1, h2, h3, h4, a {
     color: #636;
-    font-family: 'Amaranth', sans-serif;}
+    font-family: SlimJoe
+}
 
 .container {
     height: 100%;
@@ -110,9 +111,9 @@ h1, h2, h3, h4, a {
 }
 
 .intro-text {
+    font-size: 1.3rem;
     height: 70px;
     margin-bottom: 30px;
-    padding-top: 1
 }
 
 .intro-text p {
@@ -150,14 +151,17 @@ h1, h2, h3, h4, a {
     overflow:hidden;
 }
 
+/*Transparentcy transition*/
+
+
 .text_on_image {
     width: 100%;
     height: 100%;
     font-family: Metropolis;
     font-size: 10rem;
 
-    -webkit-transition:opacity .2s linear;
-    transition:opacity .2s linear;
+    -webkit-transition:opacity 2s linear;
+    transition:opacity 2s linear;
 
 }
 .text_on_image:hover {
@@ -170,7 +174,9 @@ h1, h2, h3, h4, a {
 #ihub:hover, #recruit:hover, #hire-zippy:hover, #ratibar:hover, #inside-out:hover {
     background-size: cover;
     color: transparent;
+    transition: all 0.6s ease;
 }
+
 
 #ihub, #ihub-text .title {
     color: #e2e43a;
@@ -234,7 +240,8 @@ h1, h2, h3, h4, a {
 .text {
     font-family: Raleway-Regular;
     color: #C4C4C4;
-    font-size: 1.rem;
+    font-size: 1.1rem;
+    word-spacing: .2rem;
 }
 
 .title {
