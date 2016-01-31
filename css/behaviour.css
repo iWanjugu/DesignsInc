@@ -9,7 +9,9 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
+@import "media-queries";
 
+/*-----------------------------------------------------*/
 body {
 	color: #fff;
 	font-family: 'Lato', Arial, sans-serif;
@@ -23,9 +25,15 @@ a:focus {
 .codrops-header {
 	position: relative;
 	margin: 0 auto;
-	max-width: 60%;
+	max-width: 100%;
 	text-align: center;
+
+    @media #{$small-and-down} {
+        max-width: 100%;
+
+      }
 }
+
 
 .codrops-header a {
 	outline: none;

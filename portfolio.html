@@ -6,6 +6,7 @@
 
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="portfolio_edited.css">
+    <link rel="stylesheet" type="text/css" href="custom_styles.css">
     <link rel="stylesheet" type="text/css" href="portfolio_divs.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link href="css/materialize.css" rel="stylesheet" type="text/css"/>           <link rel="stylesheet" href="css/animate.css">
@@ -35,11 +36,12 @@
         setTimeout(function(){
             $('.se-pre').fadeOut('slow', function () {
             });
-        },3000);
+        },1000);
 
     });
 });
     </script>
+    <div class="se-pre"></div>
 <!---------------------------------------------------------------->
 
 <body>
@@ -66,8 +68,9 @@
             <br>
             <br>
             <span class="intro-text  col s12 m12 l12">
-                <p>At Moringa DevShop, we value excellence and timeliness in our work. </p>
-                <p>Have a look at what we've built for world-class clients below </p
+                <p>At Moringa DevShop, we value excellence and timeliness in our work.
+                </p>
+                <p>Have a look at what we've built for world-class clients below </p>
             </span>
 
         </div>
@@ -304,7 +307,7 @@
 
     </div>  <!--con_flex end -->
 
-    </div> <!--- container end -->
+    </div> <!--- container row end -->
 </div> <!-- cover end -->
 </header>
 
@@ -314,11 +317,22 @@
     <nav id="bt-menu" class="bt-menu">
         <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
         <ul>
-            <li onclick="gohome()"><a href="#"><img src="img/house34(1).png"></a></li>
-            <li onclick="goportofolio()"><a href="#" ><img src="img/briefcase69(2).png"></a></li>
-            <li onclick="gocontact()"><a href="#" > <img src="img/phone(2)"></a></li>
+            <li onclick="gohome()"><a href="index.html">
+                <img src="img/house34(1).png"></a>
+            </li>
+            <li onclick="goportofolio()">
+                <a href="#portfolio.html" ><img src="img/briefcase69(2).png"></a>
+            </li>
+            <li onclick="gocontact()">
+                <a href="contact.html" > <img src="img/phone(2)"></a>
+            </li>
+            <li onclick="goteam()">
+                <a href="team.html" > <img src="img/multiple25.png"></a>
+            </li>
+
         </ul>
     </nav>
+<!---------------------------------------------->
 
     <!-- pop-up animation -->
     <script>
@@ -332,7 +346,6 @@
 			new grid3D( document.getElementById( 'grid3d' ) );
 		</script>
 
-    </body>
      <script>
     document.getElementById('vid').play();
 </script>
