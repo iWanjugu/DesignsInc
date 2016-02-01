@@ -31,15 +31,6 @@
 	transition: border-width 0.3s, background-color 0.3s;
 }
 
-.home-menu {
-    background-color: rgba(2, 132, 130, 0.5);
-}
-
-.home-menu.bt-menu-open {
-    background-color: rgba(2, 132, 130, 0.2);
-}
-
-
 .bt-overlay {
 	position: absolute;
 	width: 100%;
@@ -146,21 +137,33 @@
 	font-size: 20px;
 }
 
-
-.home-link:hover{
-    background-color: rgba(2, 132, 130, 0.5);;
-}
-
-.home-link a img:hover {
-    background-image:image
-}
-
-.home-link a p {
-    margin-top: -20px;
-    color: #e2e43a;
+/*------------Customizing menu--------------*/
+/*Home*/
+.home-menu.bt-menu-open, .home-link:hover {
+    background-color: rgba(2,132,130,0.2);
 }
 
 
+/*Portfolio*/
+.portfolio-menu.bt-menu-open, .portfolio-link:hover {
+    background-color:rgba(255,255,0,0.2);
+}
+
+
+/*Team*/
+.team-menu.bt-menu-open, .contact-link:hover {
+    background-color:rgba(232,122,74,0.4);
+/*    background-color:rgba(255,0,0,0.2);*/
+}
+
+/*Contact*/
+.contact-menu.bt-menu-open, .contact-link:hover {
+    background-color:rgba(232,122,74,0.4);
+/*    background-color:rgba(255,0,0,0.2);*/
+}
+
+
+/*------------------------------------------*/
 
 ul li:first-child {
 	-webkit-transform: translate3d(-100%,200%,0);
