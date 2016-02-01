@@ -6,6 +6,7 @@
 
     <!-- Stylesheets -->
     <link rel="icon" href="img/logo-dark.png">
+    <link rel="stylesheet" href="slider/vegas.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/behaviour.css" >
@@ -25,13 +26,17 @@
 
 
     <!--Scripts -->
-    <script src="js/modernizr.custom.js"></script>
     <script src="styles/buttons/js/modernizr.custom.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/webcomponents.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/mcust.js"></script>
+    <script src="js/toucheffects.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/modernizr.custom (copy).js"></script>
     <script src="js/require.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/jquery.min.js"></script>
      
 </head>
 
@@ -53,12 +58,14 @@
 <body class="page-exit animating">
 
 <!-- video background -->
+<!--
 <video autoplay loop id="vid">
     <source src="img/bg.mp4" type="video/mp4">
 
 </video>
+-->
 
-<div id="whole">
+<div id="whole" class="grey-overlay">
 <header class="codrops-header">
 
     <div class="cover col s12 m10 l8">
@@ -96,9 +103,10 @@
 
                 <!-- Button -->
                 <div id="btn-click" class="col s12 m12 l12">
-                    <p>
-                        <awesome-button onclick="goportofolio()" id="destroy-button"  width="242" progress="true"  size="large" success="All set!">Find out more</awesome-button>
-                    </p>
+
+                        <button class="more-btn round-shadow teal-overlay" onclick="goportofolio()"> find out more </button>
+<!--                        <awesome-button onclick="goportofolio()" id="destroy-button"  width="242" progress="true"  size="large" success="All set!">Find out more</awesome-button>-->
+
                 </div>
                 <br>
             </div>
@@ -123,27 +131,67 @@
 <!---------------------------------------------->
     <!--Navigation-->
 
-    <nav id="bt-menu" class="bt-menu">
+    <nav id="bt-menu" class="bt-menu home-menu">
         <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
         <ul>
-            <li onclick="gohome()"><a href="index.html">
-                <img src="img/house34(1).png"></a>
+            <!-- Home-->
+            <li class="home-link" onclick="gohome()">
+                <a href="index.html">
+                    <img src="images/house32-white.png">
+                </a>
             </li>
-            <li onclick="goportofolio()">
-                <a href="#portfolio.html" ><img src="img/briefcase69(2).png"></a>
+
+            <!-- Portfolio-->
+            <li class="portfolio-link" onclick="goportofolio()">
+                <a href="#portfolio.html" >
+                    <img src="images/briefcase32-white.png">
+                </a>
             </li>
-            <li onclick="gocontact()">
-                <a href="contact.html" > <img src="img/phone(2)"></a>
+
+            <!-- Team-->
+            <li class="team-link" onclick="goteam()">
+                <a href="team.html" >
+                    <img src="img/multiple25.png">
+                </a>
             </li>
-            <li onclick="goteam()">
-                <a href="team.html" > <img src="img/multiple25.png"></a>
+
+            <!-- Contact-->
+            <li class="contact-link" onclick="gocontact()">
+                <a href="contact.html" >
+                    <img src="img/phone(2)">
+                </a>
             </li>
+
 
         </ul>
     </nav>
 
 <!----------------------------------------------------------------->
     <!--- Scripts -->
+
+    <!--Vegas-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="slider/vegas.min.js"></script>
+
+    <script>
+    $("#whole, body").vegas({
+        overlay: true,
+        transition: 'fade',
+        transitionDuration: 4000,
+        delay: 10000,
+//        animation: 'random',
+//        animationDuration: 20000,
+        slides: [
+            { src: "/images/chair1.jpg" },
+            { src: "/images/comp2.jpg" },
+            { src: "/images/comp1.jpg" },
+            { src: "/images/comp3.jpg" },
+            { src: "/images/comp4.jpg" }
+        ],
+        overlay: '/slider/overlays/01.png'
+    });
+
+    </script>
     <script src="styles/svg/js/classie.js"></script>
     <script src="styles/svg/js/svganimations2.js"></script>
     <script>
@@ -166,6 +214,7 @@
         });
     </script>
 
+    <!---------------------------------------------->
     <script>
         wow = new WOW(
           {
@@ -182,7 +231,7 @@
           section.className = 'section--purple wow fadeInDown';
           this.parentNode.insertBefore(section, this);
         };
-  </script>
+    </script>
     <script src="js/wow.js"></script>
 
 <!----------------------------------------------------------------->

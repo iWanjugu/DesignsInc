@@ -101,13 +101,13 @@ a{
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  background: #398583;
+/*  background: #398583;*/
   padding:.5rem;
   transition:.3s background;
 }
 
 a:hover{
-  background:#398583;
+/*  background:#398583;*/
 }
 
 hr {
@@ -194,8 +194,22 @@ hr {
 }
 
 #btn-click {
+    padding: 20px 0 20px 0;
 
+}
 
+.more-btn {
+    padding: 15px 40px 15px 40px;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    color: aliceblue;
+}
+
+.more-btn:hover{
+    background-color:rgba(255,255,255, 0.5);
+    box-shadow: 0 0 5px #398583;
+    text-shadow: 0 0 2px #fff;
+    color: teal;
 }
 
 .btntour{

@@ -45,7 +45,7 @@ html, body {
     margin: 0;
 
     font-family: Raleway-Regular;
-     background: url(../img/bg.svg) #000 no-repeat center center fixed;
+     background: url(../img/bg.svg) teal no-repeat center center fixed;
     -webkit-background-size: cover;
     color: #555;
     background-size: cover;

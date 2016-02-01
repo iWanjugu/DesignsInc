@@ -25,7 +25,7 @@ html, body {
     margin: 0;
 
     font-family: Raleway-Regular;
-     background: url(../img/bg.svg) #000 no-repeat center center fixed;
+     background: url(../img/bg.svg) #000 no-repeat center center fixed !important;
     -webkit-background-size: cover;
     color: #555;
     background-size: cover;
@@ -74,8 +74,10 @@ a {}
 .grey-overlay {background-color:rgba(192,192,192,0.6);}
 .yellow-overlay {background-color:rgba(255,255,0,0.3);}
 .cerise-overlay {background-color:rgba(255,0,255,0.3);}
-.white-overlay {background-color:rgba(255,255,255, 0.9);}
+.white-overlay {background-color:rgba(255,255,255, 0.5);}
 .black-overlay {background-color: rgba(0, 0, 0, 0.9);}
+.teal-overlay {background-color: rgba(2, 132, 130, 0.5);}
+
 
 /*Overlay transition */
 
@@ -106,8 +108,9 @@ a {}
 .pink-bg-bg {background-color: #F0414C;}
 .purple {color: #4F4FE0;}
 .purple-bg {background-color: #4F4FE0;}
-.teal {color: darkturquoise;}
-.teal-bg {background-color: darkturquoise;}
+.teal {color: teal;}
+.teal-bg {background-color: teal;}
+
 
 /*-----------------------------------------*/
 /* Borders */
@@ -115,7 +118,6 @@ a {}
 /*    border: 3px solid #fff;*/
     border-radius: 5px;
     box-shadow: 0 0 10px #000;
-    padding: 20px 40px;
     text-align: center;
     text-decoration: none;
     text-shadow: 0 0 2px #000;

@@ -31,6 +31,15 @@
 	transition: border-width 0.3s, background-color 0.3s;
 }
 
+.home-menu {
+    background-color: rgba(2, 132, 130, 0.5);
+}
+
+.home-menu.bt-menu-open {
+    background-color: rgba(2, 132, 130, 0.2);
+}
+
+
 .bt-overlay {
 	position: absolute;
 	width: 100%;
@@ -126,14 +135,34 @@
 }
 
 .bt-menu ul li {
-	padding: 16px 0;
+	padding: 25px 0 15px 0;
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
 	transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
 }
 
-.bt-menu ul li:first-child {
+.bt-menu ul li:hover{
+	font-size: 20px;
+}
+
+
+.home-link:hover{
+    background-color: rgba(2, 132, 130, 0.5);;
+}
+
+.home-link a img:hover {
+    background-image:image
+}
+
+.home-link a p {
+    margin-top: -20px;
+    color: #e2e43a;
+}
+
+
+
+ul li:first-child {
 	-webkit-transform: translate3d(-100%,200%,0);
 	transform: translate3d(-100%,200%,0);
 }
