@@ -32,33 +32,36 @@
 
 /*----------------------------------------------------------------------*/
 
-body {
+html, body {
     background: #555;
-/*    background: url(../img/bg.svg) #000 no-repeat center center fixed;*/
+    background: url(../img/bg.svg) #000 no-repeat center center fixed;
     -webkit-background-size: cover;
     color: #555;
     background-size: cover;
     font-family: Raleway-Regular;
+
 }
 
 
 .cover {
-    background: url(../img/bg.svg) #555 no-repeat center center fixed;
-    -webkit-background-size: cover;
-    position: relative;
+    background: url(../img/pattern_stripe.png) #000;
+    height: 100vh;
+    min-height: 600px;
 }
 
 #all {
     height: 100vh;
     position: relative;
-    max-height: 1700px;
+    min-width: 1450px;
+    min-height: 600px;
 }
 /*--------------Contact Menu--------------*/
 
 .ps-container {
 	position: absolute;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
+    min-height: 600px;
 	overflow: hidden;
     top: 0;
 
@@ -89,7 +92,8 @@ body {
 .ps-header {
 /*	top: 0px;*/
 	left: 0px;
-	height: 150px;
+    width: 100% !important;
+	height: 100px;
 	z-index: 1001;
     font-family: Raleway-Regular;
 }
@@ -97,7 +101,7 @@ body {
 .ps-header h1 {
     text-transform: uppercase;
 	color: #ccc;
-	line-height: 150px;
+	line-height: 100px;
 	margin: 0;
 	padding: 0 50px;
 	font-weight: 200;
@@ -106,17 +110,18 @@ body {
 }
 
 .ps-contentwrapper {
-	top: 150px;
+	top: 100px;
 	bottom: 0px;
 	overflow: hidden;
 	z-index: 1000;
 }
 
 .ps-content {
-	background: #fff;
+	background: url(../img/pattern_stripe.png) #000;
 	width: 100%;
 	height: 100%;
 	padding: 50px;
+    color:darkgrey;
 }
 
 .ps-content h2 {
@@ -124,14 +129,20 @@ body {
 	border-right: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
 	letter-spacing: 4px;
-	margin: 10px 0 30px;
+	margin: 30px 0 30px;
 	text-align: right;
     text-transform: uppercase;
 	font-weight: 700;
+    font-size: 2rem;
+    color: aliceblue
 }
 
 .ps-descr {
-    height: 150px;
+    height: 350px;
+    margin-top: 100px;
+    padding: 10px;
+    border-left: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
 }
 .p-title{
     text-transform: uppercase;
@@ -161,8 +172,6 @@ body {
 	padding: 10px 15px;
 	font-weight: 400;
 	text-align: justify;
-	border-left: 1px solid #f2f2f2;
-	border-top: 1px solid #f2f2f2;
 }
 
 .ps-price {
@@ -214,8 +223,9 @@ body {
 }
 
 .ps-slides {
-	top: 0px;
-	bottom: 200px;
+	top: 100px;
+    height: auto;
+	bottom: 150px;
 	width: 100%;
 }
 
@@ -227,7 +237,7 @@ body {
 
 .ps-slidewrapper > nav {
 	width: 100%;
-	height: 200px;
+	height: 150px;
 	bottom: 0px;
 	right: 0px;
 	z-index: 1000;
@@ -307,24 +317,29 @@ body {
 }
 
 @media screen and (max-width: 860px) {
+    #all {
+        width: 100%;
+    }
 
 	.js .ps-container > div {
 		width: 100%;
 	}
 
 	.js .ps-header {
-		height: 50px;
+		height: 80px;
 	}
 
 	.js .ps-header h1 {
+        height: 80px;
 		line-height: 50px;
 		padding: 0px 20px;
 		letter-spacing: 4px;
 	}
 
 	.js .ps-slides {
+        height: auto;
 		bottom: 320px;
-		top: 50px;
+		top: 80px;
 	}
 
 	.js .ps-slidewrapper > nav {
@@ -333,7 +348,7 @@ body {
 
 	.js .ps-contentwrapper {
 		top: auto;
-		height: 220px;
+		height: 250px;
 		bottom: 100px;
 	}
 
