@@ -112,15 +112,46 @@
 
 
 </header>
-            <nav id="bt-menu" class="bt-menu">
-                <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-               <ul>
-                    <li onclick="gohome()"><a href="#"><img src="img/house34(1).png"></a></li>
-                    <li onclick="goportofolio()"><a href="#" ><img src="img/briefcase69(2).png"></a></li>
-                    <li onclick="gocontact()"><a href="#" > <img src="img/phone(2)"></a></li>
+           <!---------------------------------------------->
+    <!--Navigation-->
 
-                </ul>
-            </nav>
+    <nav id="bt-menu" class="bt-menu contact-menu">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+            <!-- Home-->
+            <li class="home-link" onclick="gohome()">
+                <a href="index.html">
+                    <img src="images/house32-white.png">
+                </a>
+            </li>
+
+            <!-- Portfolio-->
+            <li class="portfolio-link" onclick="goportofolio()">
+                <a href="#portfolio.html" >
+                    <img src="images/briefcase32-white.png">
+                </a>
+            </li>
+
+            <!-- Team-->
+            <li class="team-link" onclick="goteam()">
+                <a href="team.html" >
+                    <img src="img/multiple25.png">
+                </a>
+            </li>
+
+            <!-- Contact-->
+            <li class="contact-link" onclick="gocontact()">
+                <a href="contact.html" >
+                    <img src="img/phone(2)">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<!---------------------------------------------->
+
+
+<!----------------------------------------------------------------->
 <script src="js/classie.js"></script>
     <script src="js/borderMenu.js"></script>
 </body>

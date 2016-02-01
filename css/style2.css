@@ -147,19 +147,22 @@
 
 /*Portfolio*/
 .portfolio-menu.bt-menu-open, .portfolio-link:hover {
-    background-color:rgba(255,255,0,0.2);
+/*    background-color:rgba(255,255,0,0.2);*/
+    background-color:rgba(233,217,141,0.3)
 }
 
 
 /*Team*/
-.team-menu.bt-menu-open, .contact-link:hover {
+.team-menu.bt-menu-open, .team-link:hover {
     background-color:rgba(232,122,74,0.4);
+        background-color:rgba(255,255,255, 0.5);
 /*    background-color:rgba(255,0,0,0.2);*/
 }
 
 /*Contact*/
 .contact-menu.bt-menu-open, .contact-link:hover {
     background-color:rgba(232,122,74,0.4);
+/*    background-color:rgba(255,255,255, 0.5);*/
 /*    background-color:rgba(255,0,0,0.2);*/
 }
 
