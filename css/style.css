@@ -33,6 +33,9 @@
 /*----------------------------------------------------------------------*/
 
 html, body {
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
     background: #555;
     background: url(../img/bg.svg) #000 no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -40,20 +43,22 @@ html, body {
     background-size: cover;
     font-family: Raleway-Regular;
 
+    overflow-y:scroll;
+
 }
 
 
 .cover {
     background: url(../img/pattern_stripe.png) #000;
     height: 100vh;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 #all {
     height: 100vh;
-    position: relative;
     min-width: 1450px;
-    min-height: 600px;
+    min-height: 800px;
+    position: relative;
 }
 /*--------------Contact Menu--------------*/
 
@@ -61,8 +66,7 @@ html, body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-    min-height: 600px;
-	overflow: hidden;
+    min-height: 800px;
     top: 0;
 
 	color: #555;
@@ -83,11 +87,14 @@ html, body {
 /*Colors*/
 .chencha {
     color: teal !important;
-
 }
 .wanjugu {color: #F0414C !important;}
 .kirwa{color: #e2e43a !important;}
 .ben { color: #E87A4A !important;}
+
+
+/*--------------Menu------------------*/
+/*Team*/
 
 
 /*--------------Header------------------*/
@@ -96,8 +103,9 @@ html, body {
 	left: 0px;
     width: 100% !important;
 	height: 100px;
-	z-index: 1002;
+	z-index: 999;
     font-family: Raleway-Regular;
+    background: url(../img/pattern_stripe.png) #000;
 }
 
 .ps-header h1 {
@@ -109,13 +117,14 @@ html, body {
 	font-weight: 200;
 	font-size: 14px;
 	letter-spacing: 10px;
+    z-index: 999;
 }
 
 .ps-contentwrapper {
 	top: 100px;
 	bottom: 0px;
-	overflow: hidden;
-	z-index: 1000;
+/*	overflow: hidden;*/
+	z-index: 500;
 }
 
 .ps-content {
@@ -162,11 +171,15 @@ html, body {
 .p-descr {
     font-family: Raleway-Regular;
     font-size: .9rem;
-    letter-spacing: .1px;
+    letter-spacing: -.2px;
+    word-spacing: 1px;
     margin: 20px 0 0 0;
     height: 100%;
 }
 
+.ps-content {
+    z-index: 499 !important;
+}
 .ps-content p {
 	line-height: 26px;
 	font-size: 12px;
@@ -223,12 +236,13 @@ html, body {
 	right: 0px;
 	top: 0px;
 	height: 100%;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 .ps-slides {
 	top: 100px;
     height: auto;
+    min-height: 500px;
 	bottom: 150px;
 	width: 100%;
     background: darkgray;
@@ -237,6 +251,7 @@ html, body {
 .ps-slides > div {
 	width: 100%;
 	height: 100%;
+    min-height: 500px;
     background: url(../img/pattern_stripe.png) #000 !important;
     border: 1px solid #fff;
     text-align: center;
@@ -249,7 +264,7 @@ html, body {
 	height: 150px;
 	bottom: 0px;
 	right: 0px;
-	z-index: 1000;
+	z-index: 500;
 }
 
 .ps-slidewrapper > nav > a {

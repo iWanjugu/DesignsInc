@@ -28,8 +28,7 @@ h1, h2, h3, h4, a {
 
 body {
     color: #555;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background: url(../img/bg.jpg) #000 no-repeat center center fixed;
+    background: url(../images/comp3.jpg) no-repeat center center fixed;
     overflow-y: hidden;
     max-height: 100%;
 }
