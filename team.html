@@ -35,6 +35,22 @@
     <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/noscript.css" /><![endif]-->
 
 </head>
+<!---------------------------------------------------------------->
+
+    <script>
+
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.se-pre').fadeOut('slow', function () {
+            });
+        },1000);
+
+    });
+});
+    </script>
+    <div class="se-pre"></div>
+<!---------------------------------------------------------------->
 
 <!----------------------------------------------------------------->
 <body>
@@ -121,18 +137,10 @@
             <div class="ps-slidewrapper">
 
                 <div class="ps-slides">
-<!--
-                    <div style="background-image:url(images/andela.jpg);"></div>
-                    <div style="background-image:url(images/iwanjugu.png);"></div>
-                    <div style="background-image:url(images/kirwa.png);"></div>
-                    <div style="background-image:url(images/ben.JPG);"></div>
--->
-
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-
+                    <div id="chencha-photo" class="team-photo teal-bg"></div>
+                    <div id="wanjugu-photo" class="team-photo"></div>
+                    <div id="kirwa-photo" class="team-photo" ></div>
+                    <div id="ben-photo" class="team-photo"></div>
                 </div>
 
                 <nav>

@@ -28,7 +28,6 @@ h1, h2, h3, h4, a {
 
 body {
     color: #555;
-    background: url(../images/comp3.jpg) no-repeat center center fixed;
     overflow-y: hidden;
     max-height: 100%;
 }
@@ -51,7 +50,7 @@ video{
   padding: 20px;
   text-align: center;
   border-radius: 50%;
-  background: url(images/pattern_stripe.png);
+/*  background: url(images/pattern_stripe.png);*/
 }
 #vCent{
   display: table;

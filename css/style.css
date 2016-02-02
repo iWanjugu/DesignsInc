@@ -36,8 +36,7 @@ html, body {
     height: 100%;
     min-height: 800px;
     width: 100%;
-    background: #555;
-    background: url(../img/bg.svg) #000 no-repeat center center fixed;
+/*    background: url(../img/bg.svg) #000 no-repeat center center fixed;*/
     -webkit-background-size: cover;
     color: #555;
     background-size: cover;
@@ -56,11 +55,11 @@ html, body {
 
 #all {
     height: 100vh;
-    min-width: 1450px;
+/*    min-width: 1450px;*/
     min-height: 800px;
     position: relative;
 }
-/*--------------Contact Menu--------------*/
+/*----------------------------*/
 
 .ps-container {
 	position: absolute;
@@ -68,9 +67,6 @@ html, body {
 	height: 100%;
     min-height: 800px;
     top: 0;
-
-	color: #555;
-
 }
 
 .ps-container > div {
@@ -105,7 +101,7 @@ html, body {
 	height: 100px;
 	z-index: 999;
     font-family: Raleway-Regular;
-    background: url(../img/pattern_stripe.png) #000;
+
 }
 
 .ps-header h1 {
@@ -130,7 +126,7 @@ html, body {
 .ps-content {
 	background: url(../img/pattern_stripe.png) #000;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	padding: 50px;
     color:darkgrey;
 }
@@ -155,30 +151,9 @@ html, body {
     border-left: 1px solid #f2f2f2;
 	border-top: 1px solid #f2f2f2;
 }
-.p-title{
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-style: double;
-    font-size: .9rem;
-    margin: 0 0 10px 5px;
-}
-
-.used-text{
- font-family: Metropolis;
-}
-
-.p-descr {
-    font-family: Raleway-Regular;
-    font-size: .9rem;
-    letter-spacing: -.2px;
-    word-spacing: 1px;
-    margin: 20px 0 0 0;
-    height: 100%;
-}
 
 .ps-content {
-    z-index: 499 !important;
+/*    z-index: 499 !important;*/
 }
 .ps-content p {
 	line-height: 26px;
@@ -188,22 +163,6 @@ html, body {
 	padding: 10px 15px;
 	font-weight: 400;
 	text-align: justify;
-}
-
-.ps-price {
-	float: left;
-	margin: 20px 10px 10px 10px;
-    padding: 10px;
-	width: 140px;
-	height: 140px;
-	line-height: 140px;
-	text-align: center;
-	color: #fff;
-	background: url(../img/pattern_stripe.png) #000;
-
-	font-size: 55px;
-	font-weight: 200;
-    font-family: Metropolis;
 }
 
 .ps-content a:last-child {
@@ -216,6 +175,44 @@ html, body {
 	padding: 3px;
 	text-indent: 4px;
 }
+
+.ps-price {
+	float: left;
+	margin: 20px 10px 10px 10px;
+    padding: 10px;
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+	text-align: center;
+	color: #fff;
+	font-size: 55px;
+	font-weight: 200;
+    font-family: Metropolis;
+}
+
+.p-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: .9rem;
+    margin: 0 0 10px 5px;
+}
+
+.p-descr {
+    font-family: Raleway-Regular;
+    font-size: 1rem;
+    letter-spacing: -.2px;
+    word-spacing: .2rem;
+    margin: 20px 0 0 0;
+    height: 100%;
+    color: #C4C4C4;
+}
+
+
+.used-text{
+    font-family: Metropolis;
+    padding: 0px 5px 0 0;}
 
 .no-touch .ps-content a:last-child:hover {
 	color: #b2d79d;
@@ -237,62 +234,6 @@ html, body {
 	top: 0px;
 	height: 100%;
 /*	overflow: hidden;*/
-}
-
-.ps-slides {
-	top: 100px;
-    height: auto;
-    min-height: 500px;
-	bottom: 150px;
-	width: 100%;
-    background: darkgray;
-}
-
-.ps-slides > div {
-	width: 100%;
-	height: 100%;
-    min-height: 500px;
-    background: url(../img/pattern_stripe.png) #000 !important;
-    border: 1px solid #fff;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 2px #000;
-}
-
-.ps-slidewrapper > nav {
-	width: 100%;
-	height: 150px;
-	bottom: 0px;
-	right: 0px;
-	z-index: 500;
-}
-
-.ps-slidewrapper > nav > a {
-	width: 50%;
-	height: 100%;
-	position: relative;
-	float: left;
-/*	box-shadow: inset 0 0 0 9999px rgba(207,227,206,0.8);*/
-	outline: none;
-}
-
-nav {
-    background-color: transparent !important;
-}
-
-.ps-prev, .ps-next {
-    background: url(../img/pattern_stripe.png) #000 !important;
-}
-
-/*
-.ps-prev:hover{
-    background: url(../img/pattern_stripe.png) aliceblue !important;
-    color: #000
-}
-*/
-
-.ps-slidewrapper > nav > a:first-child {
-/*	box-shadow: inset 0 0 0 9999px rgba(233,217,141,0.8);*/
 }
 
 .no-touch .ps-slidewrapper > nav > a {
@@ -347,6 +288,43 @@ nav {
 	background-size: auto 100%;
 }
 
+.ps-slides {
+	top: 100px;
+    height: auto;
+    min-height: 500px;
+	bottom: 150px;
+	width: 100%;
+}
+
+.ps-slides > div {
+	width: 100%;
+	height: 100%;
+    min-height: 500px;
+/*    border: 1px solid #fff;*/
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.ps-slidewrapper > nav {
+	width: 100%;
+	height: 150px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 500;
+}
+
+.ps-slidewrapper > nav > a {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.ps-slidewrapper > nav > a:first-child {
+
+}
+
 .ps-move {
 	-webkit-transition: top 400ms ease-out;
 	-moz-transition: top 400ms ease-out;
@@ -355,11 +333,56 @@ nav {
 	transition: top 400ms ease-out;
 }
 
+
+/*Photos*/
+
+#chencha-photo {
+/*    background-image:url(images/andela.jpg);*/
+    background-color: rgba(2, 132, 130, 0.5)
+
+}
+
+#wanjugu-photo {
+    background-image:url(images/iwanjugu.png);
+    background-color:rgba(255,0,0,0.3)}
+#kirwa-photo {
+    background-image:url(images/kirwa.png);
+    background-color:rgba(255,255,0,0.3);
+
+}
+#ben-photo {
+    background-image:url(images/ben.JPG);
+    background-color:rgba(232, 122, 74, 0.3);
+
+}
+
+.team-photo {
+    z-index: 1;
+    top: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
 @media screen and (max-width: 860px) {
     #all {
-        width: 100%;
+        width: 80%;
     }
 
+    .js .bt-menu.bt-menu-open {
+	height: 100%;
+	border-width: 30px 70px 30px 70px;
+    }
 	.js .ps-container > div {
 		width: 100%;
 	}
@@ -381,18 +404,28 @@ nav {
 		top: 80px;
 	}
 
+    .js .ps-slides > div {
+        height: auto;
+        min-height: 300px;
+        border: 0px solid #fff;
+
+    }
+
 	.js .ps-slidewrapper > nav {
 		height: 100px;
+        background: url(../img/pattern_stripe.png) #000;
+
 	}
 
 	.js .ps-contentwrapper {
 		top: auto;
-		height: 250px;
-		bottom: 100px;
+		height: 300px;
+        bottom: 100px;
 	}
 
 	.js .ps-content {
 		padding: 10px;
+        height: 250px;
 	}
 
 	.js .ps-content h2 {
@@ -408,26 +441,28 @@ nav {
 		height: 100px;
 		line-height: 50px;
 		font-weight: 700;
-        margin: 5px 10px 0 0;
+        padding: 20px 0 0 0;
 	}
 
 	.js .ps-content p {
 		line-height: 20px;
 		border: none;
 		padding: 5px 10px;
-		height: 80px;
-/*		overflow-y: scroll;*/
+		height: 100%;
 	}
 
     .js .ps-descr {
-        height: 100px;
+        margin-top: 20px;
+        height: 150px;
     }
     .js .p-descr {
         margin: 10px 0 0 0;
     }
-	.js .ps-content a:last-child {
-		font-size: 13px;
-		margin: 10px 20px 0 0;
+
+
+	.js .p-descr a:last-child {
+		font-size: 12px;
+		margin: -10px 0 0 0;
 	}
 }
 
