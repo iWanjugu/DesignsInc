@@ -97,7 +97,7 @@ html, body {
 .ps-header {
 /*	top: 0px;*/
 	left: 0px;
-    width: 100% !important;
+/*    width: 100% !important;*/
 	height: 100px;
 	z-index: 999;
     font-family: Raleway-Regular;
@@ -231,7 +231,7 @@ html, body {
 
 .ps-slidewrapper {
 	right: 0px;
-	top: 0px;
+	top: 10px;
 	height: 100%;
 /*	overflow: hidden;*/
 }
@@ -371,12 +371,18 @@ html, body {
 
 
 
+/*---------------------------------------------------------------*/
+
+/*Medium screens*/
+@media screen and (min-width: 768px and max-width: 1249px) {
 
 
 /*---------------------------------------------------------------*/
-@media screen and (max-width: 860px) {
+
+/*Small screens*/
+@media screen and (max-width: 768px) {
     #all {
-        width: 80%;
+        width: 90%;
     }
 
     .js .bt-menu.bt-menu-open {
