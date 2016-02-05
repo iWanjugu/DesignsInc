@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/behaviour.css" >
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive-home.css">
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
@@ -67,21 +68,57 @@
 <div id="whole" class="grey-overlay">
 <header class="codrops-header">
 
-    <div class="cover col s12 m10 l8">
+    <div class="cover col s12 m12 l12">
 
+        <div class="row x_bg">
+
+        <!---- Menu ---->
+        <div class="col s12 m2 l2 menu">
+            <div class="flex center-h">
+                 <div> <img src="img/Preloader_7.gif"> </div>
+
+                 <!--home-->
+                 <a href="index.html"><div>
+                     <img src="images/house32-white.png">
+                    <p class="teal-text">Home</p>
+                 </div></a>
+
+                 <!--portfolio-->
+                 <a href="portfolio.html"><div>
+                     <img src="images/briefcase32-white.png">
+                    <p class="pink-text">Portfolio</p>
+                 </div></a>
+
+                 <!--team-->
+                 <a href="team.html"><div>
+                     <img src="img/multiple25.png">
+                    <p class="aliceblue-text">Team</p>
+                 </div></a>
+
+                 <!--contact-->
+                 <a href="contact.html"><div>
+                     <img src="img/phone(2)">
+                    <p class="orange-text">Contact</p>
+                 </div></a>
+             </div>
+
+        </div>
         <!-- Page Content -->
-        <div class="row container x_bg col s12 m10 l8 ">
+        <div class=" col s12 m10 l10 home-content">
 
+<!--
             <div class="header-bar col s12 m12 l12" style=" padding-left: 75%;padding-top: 12px;">
             </div>
+-->
 
-            <div class="strapline col s12 m12 l12 ">
+            <div class="strapline col s12 m12 l12 center-c">
                 <!--logo -->
+<!--
                 <div class="col s12 m12 l12">
                     <img class="slideExpandUp logo-big" src="img/logo-white.png">
                 </div>
-                <br>
-                <br>
+-->
+
                 <!-- title -->
                 <div class="moringa-title col s12 m12 l12">
                     <span class="animated infinite">
@@ -124,6 +161,7 @@
 
             </div>
     -->
+        </div> <!--- row end --->
         </div> <!-- cover end -->
 </header>
 
@@ -171,7 +209,7 @@
     <script src="slider/vegas.min.js"></script>
 
     <script>
-    $("#whole, body").vegas({
+    $("#whole").vegas({
         overlay: true,
         transition: 'fade',
         transitionDuration: 4000,
