@@ -35,20 +35,22 @@ video {
 
 html, body {
     width: 100%;
-    height: 100%;
+    height: auto;
     min-width: 100%;
-    min-height: 100%;
+/*    min-height: 100%;*/
     margin: 0;
     padding: 0;
     border: 0;
     line-height: 1;
     margin: 0;
 
+
     font-family: Raleway-Regular;
-/*     background: url(../img/bg.svg) teal no-repeat center center fixed;*/
-    -webkit-background-size: cover;
+/*    opacity: .3;*/
+    background: url(../slider/overlays/05.png) #555 center center repeat;
+/*    background: url(../img/pattern_stripe.png) #000;*/
     color: #555;
-    background-size: cover;
+    z-index: 0;
 
 }
 
@@ -88,35 +90,171 @@ h1, h2, h3, h4, a {
 }
 
 .cover {
-    background: url(../img/pattern_stripe.png) #000;
-    height: 100vh;
-    min-height: 800px;
+
 }
 
-.container {
+/*------------------------------------------------------------------*/
+/*-----------vertical -menu--------*/
+
+.row .x-bg {
+    width: 100%;
     height: 100vh;
-/*    min-width: 1450px;*/
-    min-height: 800px;
+}
+
+.menu, .contents {
     position: relative;
-/*    background: url(../img/pattern_stripe.png) #000;*/
+    width: 100%;
+    height: 100vh !important;
+    z-index: 100;
+}
+
+.v-nav {
+    height: 100vh;
+    width: 150px !important;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contents{
+    width: calc(100% - 150px) !important;
+    height: 100vh;
+    left: -5%;
+}
+
+.flex {
+    width: 60px;
+    height: 410px;
+    top:70px;
+    z-index: 999;
+}
+
+.flex div{
+    width: 50px;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    padding-top: 35%;
+}
+
+.flex div p {
+    font-family: Raleway-SemiBold;
+    font-size: .8rem;
+/*    font-weight: bold;*/
+}
+
+.menu-icon {
+
+}
+
+.menu-title {
+/*        visibility: hidden;*/
+    font-size: 1.3rem;
+    margin-top: 3px;
+}
+
+.menu-item {
+/*    visibility: hidden;    */
+}
+
+.flex  div:hover, .flex  div p:hover {
+    color: #fff;
+}
+
+.flex  div:hover{
+    background-color:rgba(192,192,192,0.6);
+
+}
+
+/*------------------------------------------------------------*/
+/*-----------horizontal -menu--------*/
+
+.h-nav {
+    height: 0px;
+    width: 100% !important;
+    position: absolute;
+    visibility: hidden;
+}
+
+.h-flex {
+    width: 420px;
+    height: 70px;
+/*    padding-top: 10px;*/
+
+}
+
+.h-flex div{
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;
 }
 
 
+.h-flex div p {
+    font-family: Raleway-SemiBold;
+    font-size: .8rem;
+/*    font-weight: bold;*/
+}
 
+.menu-icon-h img {
+   width: 40px;
+
+}
+
+.menu-icon-h .menu-title {
+/*        visibility: hidden;*/
+    font-size: 0rem;
+}
+
+
+.menu-item {
+/*    visibility: hidden;    */
+}
+
+.flex  div:hover, .flex  div p:hover {
+    color: #fff;
+}
+
+.flex  div:hover{
+    border: 1px solid #fff;
+    border-radius: 2px;
+/*
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 2px #000;*/
+
+}
+
+/*-------------------------------------------------------------------*/
+.descr {
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+    margin-top: 40px;
+}
+
+#portfolio-logo, #portfolio-intro {
+/*    position: absolute;*/
+}
 
 /*----logo----*/
 #portfolio-logo {
     padding-top: 10px;
     width: 100%;
-    height: 80px;
+    height: 70px;
 }
 
 /*----Description----*/
 #portfolio-intro {
     width: 100%;
-    height: 100px;
+    height: 150px;
     padding: 10px;
     margin-bottom: 20px;
+/*    top: 70px;*/
 }
 
 .page-title {
@@ -124,14 +262,14 @@ h1, h2, h3, h4, a {
     font-size:30px;
     font-weight: bolder;
     margin-bottom:20px;
-    height: 30px;
+    height: 40px;
     color: white
 }
 
 .intro-text {
     font-size: 1.1rem;
-    height: 70px;
-    padding: 30px;
+    height: auto;
+/*    padding: 50px 0 30px 0;*/
 }
 
 .intro-text p {
@@ -142,7 +280,12 @@ h1, h2, h3, h4, a {
 /*----The projets arrangement ----*/
 #con_flex {
     font-family: Raleway-Regular;
-    margin-top: 10px;
+    width: 1130px;
+    position: relative;
+/*
+    position: absolute;
+    top: 220px;
+*/
 }
 
 /*---- The divs ----*/
@@ -164,12 +307,6 @@ h1, h2, h3, h4, a {
     -webkit-transition:border .1s linear;transition:border .1s linear
 }
 
-@media screen and (max-width: 1130px){
-.con_pres {
-    width: 100%;
-    height: 400px;
-    }
-}
 
 .con_pres_img {
     height: 300px;

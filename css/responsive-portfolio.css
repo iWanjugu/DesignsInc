@@ -1,9 +1,8 @@
 /*-----------------------------------------*/
 /* Extra Large Devices, Wide Screens */
 @media only screen and (max-width : 1800px) {
-    #bt-menu {
-        visibility: hidden;
-    }
+
+
 }
 
 
@@ -14,41 +13,31 @@
         visibility: hidden;
     }
 
-    /*-------------------------------------------*/
-    body {
-        color: #555;
+    .menu, .contents {
+        position: relative;
         width: 100%;
-    /*    overflow-y: scroll;*/
+        height: 100vh !important;
+        z-index: 100;
+    }
+
+    .v-nav {
         height: 100vh;
-    /*    min-height: 800px;*/
-        background: url(../img/pattern_stripe.png);
-        z-index: 0;
-
-    }
-
-    .cover{
-        width: 100%;
-        height: 100%;
-    /*    min-height: 800px;*/
-        z-index: 10;
-
-    }
-
-    /*------------------------------------------------------------------*/
-    /*-----------vertical -menu--------*/
-
-    .menu {
-        width: 150px !important;
+        width: 100px !important;
         height: 100vh;
         text-align: center;
         margin: 0 auto;
-        position: relative;
+    }
+
+    .contents{
+        width: calc(100% - 100px) !important;
+        height: 100vh;
     }
 
     .flex {
-        width: 50px;
+        width: 60px;
         height: 410px;
         top:70px;
+        z-index: 999;
     }
 
     .flex div{
@@ -65,48 +54,214 @@
     /*    font-weight: bold;*/
     }
 
-    .menu-icon {
 
+    /*-------------------------------------------------------------------*/
+    .descr {
+        height: 100%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: relative;
+        margin-top: 40px;
     }
 
-    .menu-title {
-        visibility: hidden;
-        font-size: 1.3rem;
-        margin-top: 3px;
+    #portfolio-logo, #portfolio-intro {
+    /*    position: absolute;*/
     }
 
-    .menu-item {
-    /*    visibility: hidden;    */
+    /*----logo----*/
+    #portfolio-logo {
+        padding-top: 10px;
+        width: 100%;
+        height: 70px;
     }
 
-    .flex  div:hover, .flex  div p:hover {
-        color: #fff;
+    /*----Description----*/
+    #portfolio-intro {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin-bottom: 20px;
+    /*    top: 70px;*/
     }
 
-    .flex  div:hover{
-        background-color:rgba(192,192,192,0.6);
-
+    .page-title {
+        font-family: SlimJoe;
+        font-size:30px;
+        font-weight: bolder;
+        margin-bottom:20px;
+        height: 40px;
+        color: white
     }
 
-    /*---the content----*/
-    .home-content{
+    .intro-text {
+        font-size: 1.1rem;
+        height: auto;
+    /*    padding: 50px 0 30px 0;*/
+    }
+
+    .intro-text p {
+        height: 26px;
+    }
+
+
+    /*----The projets arrangement ----*/
+    #con_flex {
+        font-family: Raleway-Regular;
+        width: 1100px;
+        position: relative;
+    /*
+        position: absolute;
+        top: 220px;
+    */
+    }
+
+    /*---- The divs ----*/
+    /*Images*/
+
+    .con_jan,.con_pres{
+        width:calc(49% - 4px);
+        height: 430px;
+        padding:16px;
+        margin-bottom:8px;
+        overflow:hidden;
+        border-radius:4px;
+        background-color:#14181c;
+        border:2px solid transparent;
+        color:#ffffff;
+        cursor:default;
+        float: left;
+        margin-left: 10px;
+        -webkit-transition:border .1s linear;transition:border .1s linear
+    }
+
+
+    .con_pres_img {
+        height: 300px;
+        position:relative;
+        left:2px;
+        width:calc(100% + 34px);
+        margin-left:-16px;
+        margin-top:-16px;
+        margin-bottom:16px;
+        border-top-left-radius:4px;
+        border-top-right-radius:4px;
+        overflow:hidden;
+    }
+
+    /*Transparentcy transition*/
+
+
+    .text_on_image {
+        width: 100%;
+        height: 100%;
+        font-family: Metropolis;
+        font-size: 10rem;
+
+        -webkit-transition:opacity 2s linear;
+        transition:opacity 2s linear;
+
+    }
+    .text_on_image:hover {
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+
+}
+
+/*-----------------------------------------------------------------*/
+/*Medium Screen*/
+@media only screen and (max-width: 1130px){
+
+    /*-----------------------------------------*/
+    /*-----------vertical -menu--------*/
+
+    .row .x-bg {
         width: 100%;
         height: 100vh;
     }
+
+    .menu, .contents {
+        position: relative;
+        width: 100%;
+        height: 100vh !important;
+        z-index: 100;
+    }
+
+    .v-nav {
+        height: 100vh;
+        width: 100px !important;
+        height: 100vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contents{
+        width: calc(100% - 100px) !important;
+        height: 100vh;
+        left: -1%;
+    }
+
+    #con_flex {
+        width: 900px !important;
+        position: relative;
+    }
+
+    .con_pres {
+        width: 100%;
+        height: 400px;
+        margin: 0 20px 0 20px;
+        }
+
+
+
+    /*---- The divs ----*/
+    /*Images*/
+
+    .con_jan,.con_pres{
+/*        width:calc(49% - 4px);*/
+        height: 430px;
+        padding:16px;
+        margin-bottom:8px;
+        overflow:hidden;
+        border-radius:4px;
+        background-color:#14181c;
+        border:2px solid transparent;
+        color:#ffffff;
+        cursor:default;
+        float: left;
+        -webkit-transition:border .1s linear;transition:border .1s linear
+    }
+
+
+    .con_pres_img {
+        height: 300px;
+        position:relative;
+        width:calc(100% + 34px);
+        margin-left:-16px;
+        margin-top:-16px;
+        margin-bottom:16px;
+        border-top-left-radius:4px;
+        border-top-right-radius:4px;
+        overflow:hidden;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/*Medium screens*/
+@media only screen and (max-width : 992px){
 
     /*------------------------------------------------------------*/
     /*-----------horizontal -menu--------*/
 
     .h-nav {
-        height: 70px;
+        height: 0px;
         width: 100% !important;
         position: absolute;
-        top:70px;
         visibility: hidden;
     }
 
     .h-flex {
-        width: 500px;
+        width: 420px;
         height: 70px;
     /*    padding-top: 10px;*/
 
@@ -133,7 +288,7 @@
     }
 
     .menu-icon-h .menu-title {
-        visibility: hidden;
+    /*        visibility: hidden;*/
         font-size: 0rem;
     }
 
@@ -147,381 +302,30 @@
     }
 
     .flex  div:hover{
-        background-color:rgba(192,192,192,0.6);
-
-    }
-
-    /*-------------------------------------------------------------------*/
-    .home-descr {
-    height: 500px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    position: absolute;
-    top: 200px;
-}
-    .header-bar{
-      width: 100%;
-      margin-bottom: 100px;
-    }
-
-    .logo-big {
-        height: 70px;
-        width: 100px;
-
-    }
-
-    .moringa-title {
-        margin-top: 50px;
-    }
-
-
-    .moringa-title span {
-        font-family: Metropolis;
-        font-size: 5.5rem;
-    }
-
-    .slogan{
-      font-family: Raleway-Regular;
-
-        padding: 10px;
-        margin: 50px 0 60px 0;
-    }
-
-    .slogan span {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    #btn-click {
-        padding: 20px 0 20px 0;
-
-    }
-
-    .more-btn {
-        padding: 15px 40px 15px 40px;
-        font-size: 1.3rem;
-        letter-spacing: 0px;
-        color: aliceblue;
-    }
-
-    .more-btn:hover{
-        background-color:rgba(255,255,255, 0.5);
-        box-shadow: 0 0 3px #398583;
-        text-shadow: 0 0 2px #fff;
-        color: teal;
-        border: 3px solid #398583;
-    }
-}
-
-
-/*----------------------------------------------------------------*/
-/*Medium screens*/
-@media only screen and (max-width : 992px){
-
-    /*-----------side -menu--------*/
-
-    .menu, .home-content {
-        position: relative;
-    }
-
-    .menu {
-        width: 100px !important;
-        height: 100vh;
+        border: 1px solid #fff;
+        border-radius: 2px;
+    /*
+        box-shadow: 0 0 10px #000;
         text-align: center;
-        margin: 0 auto;
-    }
-
-    .flex {
-        width: 50px;
+        text-decoration: none;
+        text-shadow: 0 0 2px #000;*/
 
     }
 
-    .flex div{
-        width: 50px;
-        height: 80px;
-    }
-
-    .flex div p {
-        font-family: Raleway-SemiBold;
-        font-size: .8rem;
-    }
-
-    .flex  div:hover, .flex  div p:hover {
-        color: #fff
-    }
-
-    /*-----------the content--------*/
-    .home-content{
-        width: 100%;
-        height: 100vh;
-    }
-
-
-    .header-bar{
-      width: 100%;
-      margin-bottom: 100px;
-    }
-
-    .logo-big {
-        height: 70px;
-        width: 100px;
-
-    }
-    .moringa-title {
-        margin-top: 50px;
-
-    }
-
-    .moringa-title span {
-        font-family: Metropolis;
-        font-size: 5.5rem;
-    }
-
-    .slogan{
-      font-family: Raleway-Regular;
-
-        padding: 10px;
-        margin: 50px 0 60px 0;
-    }
-
-    .slogan span {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    #btn-click {
-        padding: 20px 0 20px 0;
-
-    }
-
-    .more-btn {
-        padding: 15px 40px 15px 40px;
-        font-size: 1.3rem;
-        letter-spacing: 0px;
-        color: aliceblue;
-    }
-
-    .more-btn:hover{
-        background-color:rgba(255,255,255, 0.5);
-        box-shadow: 0 0 3px #398583;
-        text-shadow: 0 0 2px #fff;
-        color: teal;
-        border: 3px solid #398583;
-    }
-
-    .btntour{
-      width: 25%;
-      border:1px solid white;
-      height: auto;
-      cursor: pointer;
-
-    }
-    .btntour:hover{
-      color: #8DC89C;
-      border: 2px solid #8DC79E;
-    }
 }
 
 
 /*----------------------------------------------------------------*/
  /*Small screens*/
 @media screen and (max-width: 768px) {
-     /*-----------side -menu--------*/
 
-    .menu, .home-content {
-        position: relative;
-    }
-
-    .menu {
-        width: 70px !important;
-        height: 100vh;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .flex {
-        width: 50px;
-        left: 20px;
-    /*    position: relative;*/
-
-    }
-
-    .flex div{
-        width: 50px;
-        height: 80px;
-    }
-
-    .flex div p {
-         font-family: Raleway-SemiBold;
-        font-size: .8rem;
-    /*    font-weight: bold;*/
-    }
-
-    .menu-icon {
-
-    }
-
-    .menu-title {
-/*        visibility:visible;*/
-        font-size: 1.3rem;
-        margin-top: 3px;
-    }
-
-    .menu-item {
-/*        visibility: hidden;    */
-    }
-
-    .menu-icon:hover {
-
-    }
-
-    .flex  div:hover, .flex  div p:hover {
-        color: #fff
-    }
 
 }
 
 /*----------------------------------------------------------------*/
 /* Extra Small Devices */
 @media screen and (max-width: 601px) {
-    .menu {
-        width: 0px !important;
-        height: 100vh;
-        text-align: center;
-        margin: 0 auto;
-        visibility: hidden;
-    }
 
-    .v-menu {
-        visibility: hidden;
-    }
-
-
-    /*-----------vertical-menu--------*/
-    .h-nav {
-        height: 70px;
-        width: 480px !important;
-        position: absolute;
-        top:50px;
-        visibility: visible;
-    }
-
-    .h-flex {
-        width: 100%;
-        height: 70px;
-    /*    padding-top: 10px;*/
-
-    }
-
-    .h-flex div{
-        width: 70px;
-        height: 80px;
-        color: #fff;
-        text-align: center;
-        padding-top: 15%;
-    }
-
-
-    .h-flex div p {
-        font-family: Raleway-SemiBold;
-        font-size: .8rem;
-    /*    font-weight: bold;*/
-    }
-
-    .menu-icon-h img {
-       width: 40px;
-
-    }
-
-    .menu-icon-h .menu-title {
-        visibility: hidden;
-        font-size: 0rem;
-    }
-
-
-    .h-nav .menu-item {
-        visibility: visible;
-    }
-
-    .flex  div:hover, .flex  div p:hover {
-        color: #fff;
-    }
-
-    .flex  div:hover{
-        background-color:rgba(192,192,192,0.6);
-
-    }
-
-    /*-----------the content--------*/
-    .home-content{
-        width: 100% !important;
-        height: 100vh;
-        position: absolute;
-    }
-
-    .header-bar{
-      width: 100%;
-      margin-bottom: 100px;
-    }
-
-    .logo-big {
-        height: 70px;
-        width: 100px;
-
-    }
-    .moringa-title {
-        margin-top: 50px;
-
-    }
-
-    .moringa-title span {
-        font-family: Metropolis;
-        font-size: 5rem;
-    }
-
-    .slogan{
-      font-family: Raleway-Regular;
-
-        padding: 10px;
-        margin: 50px 0 60px 0;
-    }
-
-    .slogan span {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    #btn-click {
-        padding: 20px 0 20px 0;
-
-    }
-
-    .more-btn {
-        padding: 15px 40px 15px 40px;
-        font-size: 1.1rem;
-        letter-spacing: 0px;
-        color: aliceblue;
-    }
-
-    .more-btn:hover{
-        background-color:rgba(255,255,255, 0.5);
-        box-shadow: 0 0 3px #398583;
-        text-shadow: 0 0 2px #fff;
-        color: teal;
-        border: 2px solid #398583;
-    }
-
-    .btntour{
-      width: 25%;
-      border:1px solid white;
-      height: auto;
-      cursor: pointer;
-
-    }
-    .btntour:hover{
-      color: #8DC89C;
-      border: 2px solid #8DC79E;
-    }
 
 }
 
@@ -529,146 +333,6 @@
 /* Phones */
 @media only screen and (max-width : 480px) {
 
-    .menu {
-        width: 0px !important;
-        height: 100vh;
-        text-align: center;
-        margin: 0 auto;
-        visibility: hidden;
-    }
-
-    .v-menu {
-        visibility: hidden;
-    }
 
 
-    /*-----------vertical-menu--------*/
-    .h-nav {
-        height: 50px;
-        width: 100% !important;
-        position: absolute;
-        top:20px;
-        visibility: visible;
-    }
-
-    .h-flex {
-        width: 300px;
-        height: 50px;
-    /*    padding-top: 10px;*/
-
-    }
-
-    .h-flex div{
-        width: 50px;
-        height: 100%;
-        color: #fff;
-        text-align: center;
-        padding-top: 15%;
-    }
-
-
-    .h-flex div p {
-        font-family: Raleway-SemiBold;
-        font-size: .7rem;
-    /*    font-weight: bold;*/
-    }
-
-
-    .h-flex div img {
-        width: 25px;
-    }
-
-    .menu-icon-h img {
-       width: 30px;
-
-    }
-
-    .menu-icon-h .menu-title {
-        visibility: hidden;
-        font-size: 0rem;
-    }
-
-
-    .h-nav .menu-item {
-        visibility: visible;
-    }
-
-    .flex  div:hover, .flex  div p:hover {
-        color: #fff;
-    }
-
-    .flex  div:hover{
-        background-color:rgba(192,192,192,0.6);
-
-    }
-
-    /*-----------the content--------*/
-    .home-content{
-        width: 100% !important;
-        height: 100%;
-        min-height: 100%;
-        position: absolute;
-    }
-
-    .home-descr {
-        height: 330px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        position: absolute;
-        top: 130px;
-    }
-
-    .moringa-title {
-        margin-top: 0px;
-
-    }
-
-    .moringa-title span {
-        font-family: Metropolis;
-        font-size: 3rem;
-        margin-top: 10px;
-    }
-
-    .slogan {
-        margin: 30px 0 40px 0;
-    }
-
-    .slogan span {
-        font-size: .9rem;
-        width: 100%;
-
-    }
-
-    #btn-click {
-        padding: 10px 0 20px 0;
-
-    }
-
-    .more-btn {
-        padding: 12px 30px 12px 30px;
-        font-size: 1rem;
-        letter-spacing: 0px;
-        color: aliceblue;
-    }
-
-    .more-btn:hover{
-        background-color:rgba(255,255,255, 0.5);
-        box-shadow: 0 0 3px #398583;
-        text-shadow: 0 0 2px #fff;
-        color: teal;
-        border: 1px solid #398583;
-    }
-
-    .btntour{
-      width: 25%;
-      border:1px solid white;
-      height: auto;
-      cursor: pointer;
-
-    }
-    .btntour:hover{
-      color: #8DC89C;
-      border: 2px solid #8DC79E;
-    }
-
-    }
+}
