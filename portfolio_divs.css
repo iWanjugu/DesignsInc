@@ -120,6 +120,7 @@ h1, h2, h3, h4, a {
     width: calc(100% - 150px) !important;
     height: 100vh;
     left: -5%;
+    padding: 0 !important!;
 }
 
 .flex {
@@ -235,6 +236,7 @@ h1, h2, h3, h4, a {
     transform: translate(-50%, 0%);
     position: relative;
     margin-top: 40px;
+    padding: 0 !important;
 }
 
 #portfolio-logo, #portfolio-intro {
@@ -252,7 +254,7 @@ h1, h2, h3, h4, a {
 #portfolio-intro {
     width: 100%;
     height: 150px;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     margin-bottom: 20px;
 /*    top: 70px;*/
 }
@@ -273,7 +275,7 @@ h1, h2, h3, h4, a {
 }
 
 .intro-text p {
-    height: 26px;
+    height: 27px;
 }
 
 
@@ -282,6 +284,7 @@ h1, h2, h3, h4, a {
     font-family: Raleway-Regular;
     width: 1130px;
     position: relative;
+    padding: 0 !important;
 /*
     position: absolute;
     top: 220px;
