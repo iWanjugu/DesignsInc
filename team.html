@@ -13,7 +13,6 @@
     <!--Stylesheets -->
     <link rel="icon" href="img/logo-dark.png">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="portfolio_edited.css">
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css">
     <link rel="stylesheet" type="text/css" href="portfolio_divs.css">
     <link rel="stylesheet" type="text/css" href="css/socicon.css">
@@ -21,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/maxoutpage.css">
 <!--    <link rel="stylesheet" type="text/css" href="css/menu.css">-->
-    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+<!--    <link rel="stylesheet" type="text/css" href="css/style2.css" />-->
+    <link rel="stylesheet" href="css/responsive-team.css">
 
     <!--Scripts -->
     <script src="js/jquery.min.js"></script>
@@ -59,104 +59,154 @@
 <body>
 
 <header class="codrops-header">
-    <div class="cover">
 
-    <div id="all" class="container row cntr strapline x-bg col s12 m12 l12">
+    <div id="all" class="cover col s12 m12 l12">
 
-        <!---------------------------------------------------------------->
-        <section id="ps-container" class="ps-container">
+        <div class="row x_bg">
+            <!----------------------------------->
+            <!--Vertical Navigation-->
 
-            <div class="ps-header">
-                <h1>Moringa Devshop Team</h1>
-            </div><!-- /ps-header -->
+            <div class="col s0 m2 l2 menu v-nav">
+                <div class="flex center-h">
+                    <div id="hamburger"> <img src="images/menu32.png"> </div>
 
-            <div class="ps-contentwrapper">
+                    <a href="#">
+                    <div class="menu-icon">
+                        <img src="img/Preloader_7.gif">
+                        <p class="menu-title">MENU</p>
+                    </div>
+                     </a>
+                     <!--home-->
+                     <a href="index.html">
+                        <div class="menu-item">
+                            <img src="images/house32-white.png">
+                            <p class="teal-text">Home</p>
+                        </div>
+                    </a>
 
-                <div class="ps-content">
-                    <h2 class="chencha">Jacob Chencha</h2>
-                    <div class="ps-descr">
-                        <span class="ps-price used-text chencha">J.C</span>
-                        <p>ROLE:<span class="p-title">Devshop Lead</span>
-                            <br><br>
-                            <span class="p-descr">
-                                With restful springiness in the seat; prevents static sitting and provides enhanced seating comfort. Padded seat and back for enhanced seating comfort. Soft, hardwearing and easy care leather, which ages gracefully.
-                            </span>
-                        </p>
-                            <br>
-                            <br>
-                        <a href="#">View Profile</a>
+                     <!--portfolio-->
+                     <a href="portfolio.html">
+                        <div class="menu-item">
+                             <img src="images/briefcase32-white.png">
+                             <p class="pink-text">Portfolio</p>
+                        </div>
+                     </a>
+
+                     <!--team-->
+                     <a href="team.html">
+                         <div class="menu-item">
+                             <img src="img/multiple25.png">
+                             <p class="aliceblue-text">Team</p>
+                         </div>
+                    </a>
+
+                     <!--contact-->
+                     <a href="contact.html">
+                         <div class="menu-item">
+                             <img src="img/phone(2)">
+                             <p class="orange-text">Contact</p>
+                         </div>
+                     </a>
+                 </div>
+            </div>
+
+             <!---------------------------------------------------------------->
+            <div class="strapline col s0 m10 l10 contents">
+            <section id="ps-container" class="ps-container center-">
+
+                <div class="ps-header">
+                    <h1>Moringa Devshop Team</h1>
+                </div><!-- /ps-header -->
+
+                <div class="ps-contentwrapper">
+
+                    <div class="ps-content">
+                        <h2 class="chencha">Jacob Chencha</h2>
+                        <div class="ps-descr">
+                            <span class="ps-price used-text chencha">J.C</span>
+                            <p><span class="p-title">Devshop Lead</span>
+                                <br><br>
+                                <span class="p-descr">
+                                    With restful springiness in the seat; prevents static sitting and provides enhanced seating comfort. Padded seat and back for enhanced seating comfort. Soft, hardwearing and easy care leather, which ages gracefully.
+                                </span>
+                            </p>
+                                <br>
+                                <br>
+                            <a href="#">View Profile</a>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div class="ps-content">
-                    <h2 class="wanjugu">Wanjugu Irene</h2>
-                    <div class="ps-descr">
-                        <span class="ps-price used-text wanjugu">W.I</span>
-                        <p>ROLE:<span class="p-title">Business Dev Manager</span>
-                            <br><br>
-                            <span class="p-descr">
-                        For increased stability, re-tighten the screws about two weeks after assembly. Seat and back with restful flexibility; prevents a static sitting posture and enhances comfort.
-                            </span>
-                        </p>
-                            <br>
-                            <br>
-                        <a href="#">View Profile</a>
+                    <div class="ps-content">
+                        <h2 class="wanjugu">Wanjugu Irene</h2>
+                        <div class="ps-descr">
+                            <span class="ps-price used-text wanjugu">W.I</span>
+                            <p><span class="p-title">Business Dev Manager</span>
+                                <br><br>
+                                <span class="p-descr">
+                            For increased stability, re-tighten the screws about two weeks after assembly. Seat and back with restful flexibility; prevents a static sitting posture and enhances comfort.
+                                </span>
+                            </p>
+                                <br>
+                                <br>
+                            <a href="#">View Profile</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="ps-content">
-                    <h2 class="kirwa">James Kirwa</h2>
-                    <div class="ps-descr">
-                        <span class="ps-price used-text kirwa">J.K</span>
-                        <p>ROLE:<span class="p-title">Software Developer</span><br><br>
-                            <span class="p-descr">
-                        Frame made of layer-glued bent birch; a very strong and durable material. High back provides great support for your neck. Sheepskin has natural insulating properties, which make it feel warm and cosy to sit on.
-                            </span>
-                        </p>
-                            <br>
-                            <br>
-                        <a href="#">View Profile</a>
+                    <div class="ps-content">
+                        <h2 class="kirwa">James Kirwa</h2>
+                        <div class="ps-descr">
+                            <span class="ps-price used-text kirwa">J.K</span>
+                            <p><span class="p-title">Software Developer</span><br><br>
+                                <span class="p-descr">
+                            Frame made of layer-glued bent birch; a very strong and durable material. High back provides great support for your neck. Sheepskin has natural insulating properties, which make it feel warm and cosy to sit on.
+                                </span>
+                            </p>
+                                <br>
+                                <br>
+                            <a href="#">View Profile</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="ps-content">
-                    <h2 class="ben">Benson Mburu</h2>
-                    <div class="ps-descr">
-                        <span class="ps-price used-text ben">B.M</span>
-                        <p>ROLE:<span class="p-title">Software Developer</span><br><br>
-                            <span class="p-descr">
-                        Easy to keep clean; removable, machine washable cover. Seat cushion with a top layer of memory foam; moulds to the precise contours of your body and regains its shape when you get up.
-                            </span>
-                        </p>
-                            <br>
-                            <br>
-                        <a href="#">View Profile</a>
+                    <div class="ps-content">
+                        <h2 class="ben">Benson Mburu</h2>
+                        <div class="ps-descr">
+                            <span class="ps-price used-text ben">B.M</span>
+                            <p><span class="p-title">Software Developer</span><br><br>
+                                <span class="p-descr">
+                            Easy to keep clean; removable, machine washable cover. Seat cushion with a top layer of memory foam; moulds to the precise contours of your body and regains its shape when you get up.
+                                </span>
+                            </p>
+                                <br>
+                                <br>
+                            <a href="#">View Profile</a>
+                        </div>
                     </div>
-                </div>
 
-            </div><!-- /ps-contentwrapper -->
+                </div><!-- /ps-contentwrapper -->
 
-            <div class="ps-slidewrapper">
+                <div class="ps-slidewrapper">
 
-                <div class="ps-slides">
-                    <div id="chencha-photo" class="team-photo teal-bg"></div>
-                    <div id="wanjugu-photo" class="team-photo"></div>
-                    <div id="kirwa-photo" class="team-photo" ></div>
-                    <div id="ben-photo" class="team-photo"></div>
-                </div>
+                    <div class="ps-slides">
+                        <div id="chencha-photo" class="team-photo teal-bg"></div>
+                        <div id="wanjugu-photo" class="team-photo"></div>
+                        <div id="kirwa-photo" class="team-photo" ></div>
+                        <div id="ben-photo" class="team-photo"></div>
+                    </div>
 
-                <nav>
-                    <a href="#" class="ps-prev " ></a>
-                    <a href="#" class="ps-next" ></a>
-                </nav>
+                    <nav>
+                        <a href="#" class="ps-prev " ></a>
+                        <a href="#" class="ps-next" ></a>
+                    </nav>
 
-            </div><!-- /ps-slidewrapper -->
+                </div><!-- /ps-slidewrapper -->
 
-        </section><!-- /ps-container -->
+            </section><!-- /ps-container -->
+            </div> <!--- strapline row end -->
 
-       </div> <!--- container row end -->
+        </div><!--- row x-bg end -->
     </div> <!-- cover end -->
+
 </header>
 
 <!--
@@ -176,32 +226,32 @@
     <!---------------------------------------------->
     <!--Navigation-->
 
-    <nav id="bt-menu" class="bt-menu team-menu">
+    <!-- <nav id="bt-menu" class="bt-menu team-menu">
         <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
         <ul>
             <!-- Home-->
-            <li class="home-link" onclick="gohome()">
+            <!--<li class="home-link" onclick="gohome()">
                 <a href="index.html">
                     <img src="images/house32-white.png">
                 </a>
             </li>
 
             <!-- Portfolio-->
-            <li class="portfolio-link" onclick="goportofolio()">
+            <!--<li class="portfolio-link" onclick="goportofolio()">
                 <a href="#portfolio.html" >
                     <img src="images/briefcase32-white.png">
                 </a>
             </li>
 
             <!-- Team-->
-            <li class="team-link" onclick="goteam()">
+            <!--<li class="team-link" onclick="goteam()">
                 <a href="team.html" >
                     <img src="img/multiple25.png">
                 </a>
             </li>
 
             <!-- Contact-->
-            <li class="contact-link" onclick="gocontact()">
+            <!--<li class="contact-link" onclick="gocontact()">
                 <a href="contact.html" >
                     <img src="img/phone(2)">
                 </a>
