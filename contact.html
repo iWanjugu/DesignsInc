@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/custom_styles.css">
     <link rel="stylesheet" type="text/css" href="css/style2.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive-contact.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <!-- Scripts -->
@@ -28,88 +29,145 @@
 <!-------------------------------------------------------------------------->
 <body>
 <div id="contact-section">
-
     <header class="codrops-header">
-    <div id="cover" class="cover black-overlay">
 
-        <!-- video backgorund -->
+    <!----------------------------------->
+    <!-- video backgorund -->
     <!--
         <video autoplay loop>
             <source src="img/bg.mp4" type="video/mp4">
         </video>
     -->
+    <!----------------------------------->
+    <div id="cover" class="cover col s12 m12 l12 black-overlay">
 
-        <!--------------------------------------------------->
+        <div class="row x_bg">
+        <!----------------------------------->
+            <!--Vertical Navigation-->
 
-        <div id="contact" class="container row cntr strapline x_bg col s12 m12 l12 center-c" >
+            <div class="col s0 m2 l2 menu v-nav">
+                <div class="flex center-h">
+                    <div id="hamburger">
+                        <img src="images/menu32.png">
+                    </div>
 
-            <!-- logo -->
-            <div class="col s12 m12 l12 contact-logo">
-                <img src="img/logo-white.png">
+                    <a href="#">
+                    <div class="menu-icon ">
+                        <img src="img/Preloader_7.gif">
+                        <p class="menu-title">MENU</p>
+                    </div>
+                     </a>
+                     <!--home-->
+                     <a href="index.html">
+                        <div class="menu-item">
+                            <img src="images/house32-white.png">
+                            <p class="teal-text">Home</p>
+                        </div>
+                    </a>
+
+                     <!--portfolio-->
+                     <a href="portfolio.html">
+                        <div class="menu-item">
+                             <img src="images/briefcase32-white.png">
+                             <p class="pink-text">Portfolio</p>
+                        </div>
+                     </a>
+
+                     <!--team-->
+                     <a href="team.html">
+                         <div class="menu-item">
+                             <img src="img/multiple25.png">
+                             <p class="aliceblue-text">Team</p>
+                         </div>
+                    </a>
+
+                     <!--contact-->
+                     <a href="contact.html">
+                         <div class="menu-item">
+                             <img src="img/phone(2)">
+                             <p class="orange-text">Contact</p>
+                         </div>
+                     </a>
+                 </div>
             </div>
 
-            <!-- title -->
-            <span class="col s12 m12 l12 drop-line">Drop us a line</span>
+             <!---------------------------------------------------------------->
+
+            <div  class="row col s0 m10 l10 strapline contents" >
+            <div id="contact" class="center-c">
+
+                <!-- title -->
+                <span class="col s12 m12 l12 drop-line">Drop us a line</span>
 
 
-            <!---- FORM ----->
-            <div class="form-area col s12 m12 l12 ">
+                <!---- FORM ----->
+                <div class="form-area col s12 m12 l12 ">
 
-            <form class="col s12 m12 l12">
-                <!--- form content --->
-                <div class="row">
-                    <!--Name--->
-                    <div class="input-field col s12 m12 l12" >
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate" placeholder="Name">
-                    </div>
+                <form class="col s12 m12 l12">
+                    <!--- form content --->
+                    <div class="row">
+                        <!--Name--->
+                        <div class="input-field col s12 m12 l12" >
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" placeholder="Name">
+                        </div>
 
-                    <!--Telephone--->
-                    <div class="input-field col s12 l12 m12">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate" placeholder="Telephone">
-                    </div>
+                        <!--Telephone--->
+                        <div class="input-field col s12 l12 m12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" placeholder="Telephone">
+                        </div>
 
-                    <!--Email--->
-                    <div class="input-field col s12 l12 m12" >
-                        <i class="material-icons prefix">email</i>
-                        <input id="icon_telephone" type="email" class="validate" placeholder="Email">
-                    </div>
+                        <!--Email--->
+                        <div class="input-field col s12 l12 m12" >
+                            <i class="material-icons prefix">email</i>
+                            <input id="icon_telephone" type="email" class="validate" placeholder="Email">
+                        </div>
 
-                    <!--message--->
-                    <div class="input-field col s12" >
-                        <i class="material-icons prefix">Message</i>
-                        <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Message"></textarea>
-                    </div>
+                        <!--message--->
+                        <div class="input-field col s12" >
+                            <i class="material-icons prefix">Message</i>
+                            <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Message"></textarea>
+                        </div>
 
-                </div> <!-- end row -->
+                    </div> <!-- end row -->
 
-                <!-- form buttons -->
-                <div class="col s12 m12 l12 buttons">
+                    <!-- form buttons -->
+                    <div class="col s12 m12 l12 buttons">
 
-                    <!-- submit button -->
-                     <button id="submit-button" class="btn col s3 l3 m3 waves-effect waves-light  btnsmalltext" type="submit" name="action">
-                         Submit
-                        <i class="material-icons right">send</i>
-                    </button>
+                        <!-- submit button -->
+                         <button id="submit-button" class="btn col s3 l3 m3 waves-effect waves-light  btnsmalltext" type="submit" name="action">
+                             Submit
+                            <i class="material-icons right">send</i>
+                        </button>
 
-                    <!-- github button -->
-                    <button id="github-button" class="btn  col s3 l3 m3 waves-effect waves-light  btnsmalltext" type="submit" name="github">
-                       <span>Github</span>
-                        <img src="img/github.png" >
-                    </button>
-                </div> <!--- buttons end --->
+                        <!-- github button -->
+<!--
+                        <button id="github-button" class="btn  col s3 l3 m3 waves-effect waves-light  btnsmalltext" type="submit" name="github">
+                           <span>Github</span>
+                            <img src="img/github.png" >
+                        </button>
+-->
+                    </div> <!--- buttons end --->
 
 
-                   <div class="col s12 m12 l12"></div>
+                       <div class="col s12 m12 l12"></div>
 
 
-                   <div class="col s12 m12 l12"> </div>
-            </form>
-            </div><!-- form-area end --->
+                       <div class="col s12 m12 l12"> </div>
+                </form>
+                </div><!-- form-area end --->
 
-        </div> <!----container row cntr end -->
-    </div> <!--- cover end --->
+                <!-- logo -->
+                <div class="col s12 m12 l12 contact-logo">
+                    <img src="img/logo-white.png">
+                </div>
+
+            </div> <!-- contact end -->
+            </div> <!--- strapline row end -->
+
+        </div> <!--- row x-bg end -->
+    </div> <!-- cover end -->
 
     <!--
     <div  class="copyright col s12 m12 l12">

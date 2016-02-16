@@ -1,0 +1,125 @@
+/*-----------------------------------------*/
+/* Extra Large Devices, Wide Screens */
+@media only screen and (max-width : 1800px) {
+    #bt-menu {
+        visibility: hidden;
+    }
+}
+
+
+/*---------------------------------------------------------------*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1279px) {
+    #bt-menu {
+        visibility: hidden;
+    }
+}
+
+
+/*----------------------------------------------------------------*/
+/*Medium screens*/
+@media only screen and (max-width : 992px){
+
+    /*-----------side -menu--------*/
+
+    .menu, .home-content, .contents  {
+        position: relative;
+    }
+
+    .menu {
+        width: 100px !important;
+        height: 100vh !important;
+      text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex {
+        width: 50px;
+
+    }
+
+    .flex div{
+        width: 50px;
+        height: 80px;
+    }
+
+    .flex div p {
+        font-family: Raleway-SemiBold;
+        font-size: .8rem;
+    }
+
+    .flex  div:hover, .flex  div p:hover {
+        color: #fff
+    }
+
+
+    .v-nav {
+        height: 100vh;
+        width: 100px !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contents{
+        width: calc(100% - 100px) !important;
+        height: 100vh;
+        left: -6%;
+    }
+
+/*----------------------------------------------------------------*/
+ /*Small screens*/
+@media screen and (max-width: 768px) {
+     /*-----------side -menu--------*/
+
+    .menu, .home-content {
+        position: relative;
+    }
+
+    .menu {
+        width: 70px !important;
+        height: 100vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flex {
+        width: 50px;
+        left: 20px;
+    /*    position: relative;*/
+
+    }
+
+    .flex div{
+        width: 50px;
+        height: 60px;
+    }
+
+    .flex div p {
+         font-family: Raleway-SemiBold;
+        font-size: .8rem;
+    /*    font-weight: bold;*/
+    }
+
+    .menu-icon {
+
+    }
+
+    .menu-title {
+/*        visibility:visible;*/
+        font-size: 1.3rem;
+        margin-top: 3px;
+    }
+
+    .menu-item {
+/*        visibility: hidden;    */
+    }
+
+    .menu-icon:hover {
+
+    }
+
+    .flex  div:hover, .flex  div p:hover {
+        color: #fff
+    }
+
+    /*-------------------------------------------------------------------*/
