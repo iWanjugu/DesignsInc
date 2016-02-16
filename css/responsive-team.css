@@ -39,7 +39,7 @@
     .flex {
         width: 60px;
         height: 410px;
-        top:70px;
+        top: 70px;
         z-index: 999;
     }
 
@@ -202,7 +202,7 @@
 
 	.js .ps-content h2 {
 		border-right: none;
-		font-size: 18px;
+		font-size: 16px;
 		margin: 10px 0;
 		padding-top: 0;
 	}
@@ -259,7 +259,7 @@
     .flex {
         width: 60px;
         height: 410px;
-        top:70px;
+        top: 0px;
         z-index: 999;
         padding-left: 7px;
 
@@ -305,9 +305,6 @@
         overflow: hidden;
 	}
 
-
-
-
 }
 
 /*----------------------------------------------------------------*/
@@ -317,7 +314,7 @@
     /*Content*/
 
     .menu, .contents {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100vh !important;
         z-index: 100;
@@ -328,6 +325,7 @@
         width: 0px !important;
         text-align: center;
         margin: 0 auto;
+        z-index: 999;
     }
 
     .flex {
@@ -352,7 +350,7 @@
     #hamburger {
         visibility: visible;
         height: 50px;
-        margin: 20px;
+        margin: 14px 20px 20px 20px;
     }
 
 
@@ -368,7 +366,184 @@
         margin-top: -10px;
     }
 
+    .flex div p {
+        font-family: Raleway-SemiBold;
+        font-size: .8rem;
+    /*    font-weight: bold;*/
+    }
 
+    .contents{
+        width: 100% !important;
+        position: absolute;
+        height: 100vh;
+    }
+
+ 	.js .ps-container {
+		width: 97%;
+        height: 650px !important;
+        overflow: hidden;
+        /* center-c */
+/*
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+*/
+
+
+        /* center-h */
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: absolute;
+	}
+
+    .js .ps-contentwrapper {}
+
+    .js .ps-slidewrapper {
+
+    }
+
+	.js .ps-container > div {
+		width: 100%;
+	}
+
+	.js .ps-header {
+		height: 50px;
+        top: 0px;
+	}
+
+	.js .ps-header h1 {
+        font-size: 1.3rem;
+        height: 100%;
+        margin: 0;
+        padding: 5px 20px;
+/*
+		line-height: 0px;
+		letter-spacing: 2px;
+*/
+	}
+
+	.js .ps-slides {
+        height: 270px;
+        min-height: 270px;
+		top: 55px;
+        overflow: hidden;
+	}
+
+    .js .ps-slides > div {
+        height: 270px;
+        min-height: 270px;
+        width: 80%;
+        border: 0px solid #fff;
+
+    }
+
+	.js .ps-contentwrapper {
+		top: 320px;
+		height: 350px;
+/*        bottom: 100px;*/
+	}
+
+	.js .ps-content {
+		padding: 10px;
+        height: 350px;
+	}
+
+	.js .ps-content h2 {
+		border-right: none;
+		font-size: 1rem;
+		margin: 10px 0;
+		padding-top: 0;
+	}
+
+	.js .ps-content span.ps-price {
+		font-size: 3rem;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-weight: 700;
+        margin-top: 50px;
+	}
+
+	.js .ps-content p {
+		line-height: 20px;
+		border: none;
+		padding: 5px 10px;
+		height: 210px;
+        overflow:scroll;
+	}
+
+    .js .ps-descr {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .js .ps-descr a {
+        position: absolute;
+        top: 300px;
+        right: 40px;
+
+    }
+
+
+    .js .p-descr {
+        margin: 10px 0 0 0;
+        padding: 5px;
+        overflow: scroll;
+    }
+
+
+
+	.js .p-descr a:last-child {
+		font-size: 12px;
+		margin: -10px 0 0 0;
+	}
+
+    .js .ps-slidewrapper > nav {
+		height: 100px;
+        background: url(../img/pattern_stripe.png) #000;
+        z-index: 999;
+
+	}
+
+
+}
+
+/*----------------------------------------------------------------*/
+/* Phones */
+@media only screen and (max-width : 480px) {
+    /*------------------------------*/
+    /*Content*/
+
+    .menu-item {
+        visibility: hidden;
+        margin-left: 20px;
+    }
+    .menu-icon {
+        margin-left: 20px;
+        visibility: hidden;
+        height: 0px;
+    }
+
+    #hamburger {
+        visibility: visible;
+        height: 50px;
+        margin: 14px 20px 20px 20px;
+    }
+
+
+    .flex div {
+        width: 100%;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .flex div img {
+        width: 30px;
+        margin-top: -10px;
+    }
 
     .flex div p {
         font-family: Raleway-SemiBold;
@@ -384,35 +559,38 @@
 
  	.js .ps-container {
 		width: 97%;
-        height: 600px;
+        height: 700px !important;
+        overflow: hidden;
         /* center-c */
+/*
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
-        overflow: hidden;
+*/
+
+
+        /* center-h */
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        position: absolute;
 	}
-
-    .js .ps-contentwrapper {}
-
-    .js .ps-slidewrapper {
-
-    }
 
 	.js .ps-container > div {
 		width: 100%;
 	}
 
 	.js .ps-header {
-		height: 60px;
-        top: 10px;
+		height: 50px;
+        top: 0px;
 	}
 
 	.js .ps-header h1 {
-        font-size: 1.3rem;
+        font-size: 1rem;
         height: 100%;
         margin: 0;
-        padding: 5px 20px;
+        padding: 5px 10px;
 /*
 		line-height: 0px;
 		letter-spacing: 2px;
@@ -420,36 +598,29 @@
 	}
 
 	.js .ps-slides {
-        height: 300px;
-        min-height: 300px;
-		top: 70px;
+        height: 240px;
+        min-height: 240px;
+		top: 55px;
         overflow: hidden;
 	}
 
     .js .ps-slides > div {
-        height: 350px;
-        min-height: 350px;
-        width: 90%;
+        height: 240px;
+        min-height: 240px;
+        width: 80%;
         border: 0px solid #fff;
 
     }
 
-	.js .ps-slidewrapper > nav {
-		height: 100px;
-        background: url(../img/pattern_stripe.png) #000;
-        z-index: 999;
-
-	}
-
 	.js .ps-contentwrapper {
-		top: 420px;
-		height: 290px;
-        bottom: 100px;
+		top: 290px;
+		height: 350px;
+/*        bottom: 100px;*/
 	}
 
 	.js .ps-content {
 		padding: 10px;
-        height: 250px;
+        height: 300px;
 	}
 
 	.js .ps-content h2 {
@@ -461,43 +632,64 @@
 
 	.js .ps-content span.ps-price {
 		font-size: 3rem;
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 50px;
 		line-height: 50px;
 		font-weight: 700;
-        padding: 20px 0 0 0;
+        margin-top: 50px;
 	}
 
 	.js .ps-content p {
-		line-height: 20px;
+		line-height: 15px;
 		border: none;
 		padding: 5px 10px;
-		height: 100%;
-	}
+		height: 210px;
+        	}
 
     .js .ps-descr {
         margin-top: 20px;
-        height: 150px;
+        height: 200px;
+    }
+
+    .js .ps-descr a {
+        position: absolute;
+        top: 280px;
+        right: 30px;
+        width: 120px;
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .js .p-content h2 {
+        font-size: .9rem;
+    }
+
+    .js .p-title {
+        font-size: .8rem;
+
     }
     .js .p-descr {
         margin: 10px 0 0 0;
+        padding: 5px;
+        overflow: scroll;
+        font-size: .8rem;
     }
 
+    .js .p-descr p {
+        height: 250px;
+        overflow: scroll;
+        font-size: .8rem;
+    }
 
 	.js .p-descr a:last-child {
 		font-size: 12px;
 		margin: -10px 0 0 0;
 	}
 
+    .js .ps-slidewrapper > nav {
+        bottom: 0;
 
-}
-
-/*----------------------------------------------------------------*/
-/* Phones */
-@media only screen and (max-width : 480px) {
-    /*------------------------------*/
-    /*Content*/
-
+	}
 
 
 }

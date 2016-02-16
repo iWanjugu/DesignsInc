@@ -35,7 +35,7 @@
 
 html, body {
     height: 100%;
-    min-height: 800px;
+    min-height: 750px;
     width: 100%;
 /*    background: url(../img/bg.svg) #000 no-repeat center center fixed;*/
     -webkit-background-size: cover;
@@ -66,7 +66,7 @@ html, body {
 #all {
     height: 100vh;
 /*    min-width: 1450px;*/
-    min-height: 800px;
+    min-height: 750px;
     position: relative;
 }
 
@@ -109,7 +109,7 @@ html, body {
 .flex {
     width: 60px;
     height: 410px;
-    top:70px;
+    top: 70px;
     z-index: 999;
 }
 
@@ -141,11 +141,12 @@ html, body {
 .ps-container {
 	position: absolute;
 	width: 90%;
-	height: 100%;
-    min-height: 800px;
+	height: 750px;
+    min-height: 750px;
     top: 0;
     padding: 0 0px 0 0;
 
+/*    center-h*/
     left: 40%;
     transform: translate(-40%, 0%);
     position: absolute;
@@ -166,7 +167,8 @@ html, body {
 /*--------------Header------------------*/
 .ps-header {
 	left: 0px;
-/*    width: 100% !important;*/
+    top: 20px;
+    width: 100% !important;
 	height: 100px;
 	z-index: 999;
     text-align: center;
@@ -185,7 +187,7 @@ html, body {
 */
 
     font-family: SlimJoe;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 40px;
     margin-bottom: 0px;
@@ -205,7 +207,7 @@ html, body {
 	background: url(../img/pattern_stripe.png) #000;
 	width: 100%;
 	height: auto;
-	padding: 50px 50px 50px 10px;
+	padding: 30px 50px 50px 10px;
     color:darkgrey;
 }
 
@@ -214,17 +216,17 @@ html, body {
 	border-right: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
 	letter-spacing: 1px;
-	margin: 30px 0 30px;
+	margin: 30px 0 10px;
 	text-align: right;
     text-transform: uppercase;
 	font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: aliceblue
 }
 
 .ps-descr {
     height: 350px;
-    margin-top: 100px;
+    margin-top: 60px;
     padding: 10px;
     border-left: 1px solid #f2f2f2;
 	border-top: 1px solid #f2f2f2;
@@ -313,7 +315,7 @@ html, body {
 	right: 0px;
 	top: 0px;
     bottom: 0px;
-	height: 100%;
+	height: 750px;
 /*	overflow: hidden;*/
 }
 
@@ -370,17 +372,18 @@ html, body {
 }
 
 .ps-slides {
-	top: 100px;
-    height: auto;
-    min-height: 500px;
+	top: 150px;
+    height: 450px;
+    min-height: 450px;
 	bottom: 150px;
 	width: 100%;
+    overflow: hidden;
 }
 
 .ps-slides > div {
-	width: 100%;
-	height: 100%;
-    min-height: 500px;
+	width: 90%;
+	height: 420px;
+    min-height: 450px;
 /*    border: 1px solid #fff;*/
     text-align: center;
     text-decoration: none;
@@ -389,8 +392,8 @@ html, body {
 
 .ps-slidewrapper > nav {
 	width: 100%;
-	height: 150px;
-	bottom: 0px;
+	height: 100px;
+	bottom: 50px;
 	right: 0px;
 	z-index: 500;
 }

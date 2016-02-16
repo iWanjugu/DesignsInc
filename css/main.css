@@ -200,7 +200,7 @@ body {
 
 .flex div{
     width: 50px;
-    height: 80px;
+    height: 60px;
     color: #fff;
     text-align: center;
     padding-top: 35%;
@@ -301,14 +301,14 @@ body {
 /*-------------------------------------------------------------------*/
 .home-descr {
     height: 500px;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, 0%);
     position: absolute;
-    top: 200px;
+    top: 150px;
 }
 
 .logo-big {
-    height: 70px;
+    height: 60px;
     width: 100px;
 
 }
@@ -316,28 +316,6 @@ body {
     margin-top: 50px;
 
 }
-
-/*-----------------------------------------*/
-/*text-shadow animation*/
-
-@-webkit-keyframes shadow
-{
-    from {text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff;}
-    to {text-shadow : none;}
-}
-
-@-moz-keyframes shadow
-{
-    from {text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff;}
-    to {text-shadow : none;}
-}
-@keyframes shadow
-{
-    from {text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff;}
-    to {text-shadow : none;}
-}
-
-/*-----------------------------------------*/
 
 .moringa-title span {
     font-family: Metropolis;
