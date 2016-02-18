@@ -39,7 +39,7 @@
     .flex {
         width: 60px;
         height: 410px;
-        top: 70px;
+        top: 20px;
         z-index: 999;
     }
 
@@ -132,31 +132,43 @@
         left: -6%;
     }
 
+    .flex {
+        margin-left: 5%;
+        padding-left: 5%;
+    }
+
  	.js .ps-container {
 		width: 85%;
-        height: 700px;
+        height: 100vh;
+        min-height: 800px;
         /* center-c */
+/*
         top: 50%;
         left: 43%;
         transform: translate(-50%, -50%);
         position: absolute;
         overflow: hidden;
+*/
+
+        /* center-h */
+
+        left: 45%;
+        transform: translate(-50%, 0%);
+        position: absolute;
+
 	}
-
-    .js .ps-contentwrapper {}
-
-    .js .ps-slidewrapper {
-
-    }
 
 	.js .ps-container > div {
 		width: 100%;
 	}
 
+    /*------------------------*/
+    /*Header*/
+
 	.js .ps-header {
 		height: 60px;
         top: 10px;
-	}
+    }
 
 	.js .ps-header h1 {
         height: 100%;
@@ -168,9 +180,15 @@
 */
 	}
 
-	.js .ps-slides {
+	/*Slides and Nav bar at the bottom*/
+    .js .ps-slidewrapper {
+        top: 80px;
+        height: calc(100% - 80px);
+    }
+
+    .js .ps-slides {
         height: 350px;
-		top: 70px;
+		top: 0px;
         min-height: 350px;
         overflow: hidden;
 	}
@@ -179,25 +197,25 @@
         height: 350px;
         min-height: 350px;
         border: 0px solid #fff;
-
     }
 
-	.js .ps-slidewrapper > nav {
-		height: 100px;
+    .js .ps-slidewrapper > nav {
+		height: 150px;
         background: url(../img/pattern_stripe.png) #000;
         z-index: 999;
-
+        bottom: 0px;
 	}
 
-	.js .ps-contentwrapper {
-		top: 420px;
-		height: 290px;
+    /*Content*/
+    .js .ps-contentwrapper {
+		top: 430px;
+		height: 380px;
         bottom: 100px;
+        overflow: hidden
 	}
-
 	.js .ps-content {
 		padding: 10px;
-        height: 250px;
+        height: 100%;
 	}
 
 	.js .ps-content h2 {
@@ -225,16 +243,30 @@
 
     .js .ps-descr {
         margin-top: 20px;
-        height: 150px;
+        height: 270px;
     }
     .js .p-descr {
         margin: 10px 0 0 0;
+    }
+
+    .js .ps-descr a {
+        position: absolute;
+        top: 200px;
+        right: 20px
+
     }
 
 
 	.js .p-descr a:last-child {
 		font-size: 12px;
 		margin: -10px 0 0 0;
+	}
+    .js .ps-slidewrapper > nav {
+		height: 130px;
+        background: url(../img/pattern_stripe.png) #000;
+        z-index: 999;
+        bottom: 0px !important;
+
 	}
 }
 
@@ -259,7 +291,7 @@
     .flex {
         width: 60px;
         height: 410px;
-        top: 0px;
+        top: 10px;
         z-index: 999;
         padding-left: 7px;
 
@@ -289,22 +321,91 @@
     /*    font-weight: bold;*/
     }
 
-    .contents{
+    .contents {
         width: calc(100% - 70px) !important;
         height: 100vh;
     }
 
- 	.js .ps-container {
+
+    .js .ps-container {
 		width: 85%;
-        height: 700px;
+        overflow: hidden;
         /* center-c */
+/*
         top: 50%;
-        left: 45%;
+        left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
+*/
+
+
+        /* center-h */
+        left: 45%;
+        transform: translate(-50%, 0%);
+        position: absolute;
+	}
+
+    /*------------------------*/
+    /*Header*/
+
+	.js .ps-header {
+		height: 60px;
+        top: 10px;
+    }
+
+	.js .ps-header h1 {
+        height: 100%;
+        margin: 0;
+        padding: 5px 20px;
+/*
+		line-height: 0px;
+		letter-spacing: 2px;
+*/
+	}
+
+	/*Slides and Nav bar at the bottom*/
+    .js .ps-slidewrapper {
+        top: 80px;
+        height: calc(100% - 80px);
+    }
+
+    .js .ps-slides {
+        height: 350px;
+		top: 0px;
+        min-height: 350px;
         overflow: hidden;
 	}
 
+    .js .ps-slides > div {
+        height: 350px;
+        min-height: 350px;
+        border: 0px solid #fff;
+    }
+
+    .js .ps-slidewrapper > nav {
+		height: 100px;
+        background: url(../img/pattern_stripe.png) #000;
+        z-index: 999;
+        bottom: 0px;
+	}
+
+    /*Content*/
+    .js .ps-contentwrapper {
+		top: 430px;
+		height: 380px;
+        bottom: 100px;
+        overflow: hidden
+	}
+	.js .ps-content {
+		padding: 10px;
+        height: 100%;
+	}
+
+    .js .ps-descr a {
+        position: absolute;
+        top: 240px;
+        right: 20px
+    }
 }
 
 /*----------------------------------------------------------------*/
@@ -389,32 +490,21 @@
         transform: translate(-50%, -50%);
         position: absolute;
 */
-
-
         /* center-h */
-        top: 10px;
         left: 50%;
         transform: translate(-50%, 0%);
         position: absolute;
 	}
 
-    .js .ps-contentwrapper {}
-
-    .js .ps-slidewrapper {
-
-    }
-
-	.js .ps-container > div {
-		width: 100%;
-	}
+    /*------------------------*/
+    /*Header*/
 
 	.js .ps-header {
-		height: 50px;
-        top: 0px;
-	}
+		height: 60px;
+        top: 10px;
+    }
 
 	.js .ps-header h1 {
-        font-size: 1.3rem;
         height: 100%;
         margin: 0;
         padding: 5px 20px;
@@ -424,90 +514,49 @@
 */
 	}
 
-	.js .ps-slides {
-        height: 270px;
-        min-height: 270px;
-		top: 55px;
+	/*Slides and Nav bar at the bottom*/
+    .js .ps-slidewrapper {
+        top: 80px;
+        height: calc(100% - 80px);
+    }
+
+    .js .ps-slides {
+        height: 350px;
+		top: 0px;
+        min-height: 350px;
         overflow: hidden;
 	}
 
     .js .ps-slides > div {
-        height: 270px;
-        min-height: 270px;
-        width: 80%;
-        border: 0px solid #fff;
-
-    }
-
-	.js .ps-contentwrapper {
-		top: 320px;
-		height: 350px;
-/*        bottom: 100px;*/
-	}
-
-	.js .ps-content {
-		padding: 10px;
         height: 350px;
-	}
-
-	.js .ps-content h2 {
-		border-right: none;
-		font-size: 1rem;
-		margin: 10px 0;
-		padding-top: 0;
-	}
-
-	.js .ps-content span.ps-price {
-		font-size: 3rem;
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		font-weight: 700;
-        margin-top: 50px;
-	}
-
-	.js .ps-content p {
-		line-height: 20px;
-		border: none;
-		padding: 5px 10px;
-		height: 210px;
-        overflow:scroll;
-	}
-
-    .js .ps-descr {
-        margin-top: 20px;
-        height: auto;
+        min-height: 350px;
+        border: 0px solid #fff;
     }
-
-    .js .ps-descr a {
-        position: absolute;
-        top: 300px;
-        right: 40px;
-
-    }
-
-
-    .js .p-descr {
-        margin: 10px 0 0 0;
-        padding: 5px;
-        overflow: scroll;
-    }
-
-
-
-	.js .p-descr a:last-child {
-		font-size: 12px;
-		margin: -10px 0 0 0;
-	}
 
     .js .ps-slidewrapper > nav {
 		height: 100px;
         background: url(../img/pattern_stripe.png) #000;
         z-index: 999;
-
+        bottom: 0px;
 	}
 
+    /*Content*/
+    .js .ps-contentwrapper {
+		top: 430px;
+		height: 380px;
+        bottom: 100px;
+        overflow: hidden
+	}
+	.js .ps-content {
+		padding: 10px;
+        height: 100%;
+	}
 
+    .js .ps-descr a {
+        position: absolute;
+        top: 240px;
+        right: 20px
+    }
 }
 
 /*----------------------------------------------------------------*/
@@ -571,7 +620,6 @@
 
 
         /* center-h */
-        top: 10px;
         left: 50%;
         transform: translate(-50%, 0%);
         position: absolute;

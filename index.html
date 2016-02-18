@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang=en>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>HOME::MSDevShop</title>
 
     <!-- Stylesheets -->
@@ -78,17 +79,21 @@
 
         <div class="col s0 m2 l2 menu v-nav">
             <div class="flex center-h">
-<!--                <div id="hamburger"> <img src="images/menu32.png"> </div>-->
+                <div id="hamburger">
+                    <img src="images/menu32.png">
+                </div>
 
+<!--
                 <a href="#">
                 <div class="menu-icon">
                     <img src="img/Preloader_7.gif">
                     <p class="menu-title">MENU</p>
                 </div>
                  </a>
+-->
                  <!--home-->
                  <a href="index.html">
-                    <div class="menu-item">
+                    <div class="menu-item home">
                         <img src="images/house32-white.png">
                         <p class="teal-text">Home</p>
                     </div>
@@ -96,7 +101,7 @@
 
                  <!--portfolio-->
                  <a href="portfolio.html">
-                    <div class="menu-item">
+                    <div class="menu-item portfolio">
                          <img src="images/briefcase32-white.png">
                          <p class="pink-text">Portfolio</p>
                     </div>
@@ -104,7 +109,7 @@
 
                  <!--team-->
                  <a href="team.html">
-                     <div class="menu-item">
+                     <div class="menu-item team">
                          <img src="img/multiple25.png">
                          <p class="aliceblue-text">Team</p>
                      </div>
@@ -112,7 +117,7 @@
 
                  <!--contact-->
                  <a href="contact.html">
-                     <div class="menu-item">
+                     <div class="menu-item contact">
                          <img src="img/phone(2)">
                          <p class="orange-text">Contact</p>
                      </div>
@@ -124,52 +129,60 @@
         <!-- Page Content -->
         <div class=" col s12 m10 l10 home-content">
 
-            <!--Horizontal Navigation-->
-            <div class="row col s12 m2 l2 h-nav center-h">
-                <div class="h-flex center-h">
-                    <!--                <div id="hamburger"> <img src="images/menu32.png"> </div>-->
+            <div class="home-descr strapline col s12 m12 l12">
 
-                    <a href="#">
-                    <div class="menu-icon-h">
-                        <img src="img/Preloader_7.gif">
-                        <p class="menu-title">Menu</p>
-                    </div>
-                     </a>
-                     <!--home-->
-                     <a href="index.html">
-                        <div class="menu-item">
-                            <img src="images/house32-white.png">
-                            <p class="teal-text">Home</p>
+                <!--Horizontal Navigation-->
+                <div class="row col s12 m2 l2 h-nav center-h">
+                    <div class="h-flex center-h">
+    <!--
+                        <div id="hamburger">
+                            <img src="images/menu32.png">
                         </div>
-                    </a>
+    -->
 
-                     <!--portfolio-->
-                     <a href="portfolio.html">
-                        <div class="menu-item">
-                             <img src="images/briefcase32-white.png">
-                             <p class="pink-text">Portfolio</p>
+    <!--
+                        <a href="#">
+                        <div class="menu-icon-h">
+                            <img src="img/Preloader_7.gif">
+                            <p class="menu-title">Menu</p>
                         </div>
-                     </a>
+                         </a>
+    -->
+                         <!--home-->
+                         <a href="index.html">
+                            <div class="menu-item">
+                                <img src="images/house32-white.png">
+                                <p class="teal-text">Home</p>
+                            </div>
+                        </a>
 
-                     <!--team-->
-                     <a href="team.html">
-                         <div class="menu-item">
-                             <img src="img/multiple25.png">
-                             <p class="aliceblue-text">Team</p>
-                         </div>
-                    </a>
+                         <!--portfolio-->
+                         <a href="portfolio.html">
+                            <div class="menu-item">
+                                 <img src="images/briefcase32-white.png">
+                                 <p class="pink-text">Portfolio</p>
+                            </div>
+                         </a>
 
-                     <!--contact-->
-                     <a href="contact.html">
-                         <div class="menu-item">
-                             <img src="img/phone(2)">
-                             <p class="orange-text">Contact</p>
-                         </div>
-                     </a>
-                 </div>
-            </div>
+                         <!--team-->
+                         <a href="team.html">
+                             <div class="menu-item">
+                                 <img src="img/multiple25.png">
+                                 <p class="aliceblue-text">Team</p>
+                             </div>
+                        </a>
 
-            <div class="home-descr strapline col s12 m12 l12 center-h">
+                         <!--contact-->
+                         <a href="contact.html">
+                             <div class="menu-item">
+                                 <img src="img/phone(2)">
+                                 <p class="orange-text">Contact</p>
+                             </div>
+                         </a>
+                     </div>
+                </div>
+
+
                 <!--logo -->
                 <div class="col s12 m12 l12 m-logo">
                     <a href="index.html">
@@ -188,9 +201,7 @@
                 <!-- Description -->
                 <div class="slogan col s12 m12 l12">
                     <span class="shade4 stretchLeft">
-                        We are a software development firm;
-                        <br>
-                        creating software that fulfills your goals and needs
+                        We empower tech startups by transforming their ideas into full-scale products
                     </span>
                 </div>
 

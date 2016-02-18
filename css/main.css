@@ -183,24 +183,28 @@ body {
 
 .menu, .home-content {
     position: relative;
+    height: 100vh;
 }
 
 .menu {
     width: 150px !important;
-    height: 100vh;
     text-align: center;
     margin: 0 auto;
+}
+
+.home-content {
+    width: calc(100% - 150px) !important;
 }
 
 .flex {
     width: 50px;
     height: 410px;
-    top:70px;
+    top:0px;
 }
 
 .flex div{
-    width: 50px;
-    height: 60px;
+    width: 60px;
+    height: 80px;
     color: #fff;
     text-align: center;
     padding-top: 35%;
@@ -212,37 +216,48 @@ body {
 /*    font-weight: bold;*/
 }
 
-.menu-icon {
-
-}
-
 .menu-title {
     visibility: hidden;
     font-size: 1.3rem;
     margin-top: 3px;
+    width: 0px;
 }
 
 .menu-item {
 /*    visibility: hidden;    */
 }
 
-.flex  div:hover, .flex  div p:hover {
+.menu-item p{
+
+}
+
+#hamburger {
+    visibility: hidden;
+    height: 0px;
+}
+
+.flex  div p:hover {
     color: #fff;
 }
 
-.flex  div:hover{
-    background-color:rgba(192,192,192,0.6);
-
+.menu-item.home:hover {
+    background-color: teal !important;
 }
 
-/*---the content----*/
-.home-content{
-    width: 100%;
-    height: 100vh;
+.menu-item.portfolio:hover {
+    background-color: #F0414C !important;
+}
+
+.menu-item.team:hover {
+    background-color: aliceblue !important;
+}
+
+.menu-item.contact:hover {
+    background-color: #E87A4A !important;
 }
 
 /*------------------------------------------------------------*/
-/*-----------vertical -menu--------*/
+/*-----------horizontal - menu--------*/
 
 .h-nav {
     height: 70px;
@@ -284,27 +299,19 @@ body {
     font-size: 0rem;
 }
 
-
-.menu-item {
-/*    visibility: hidden;    */
-}
-
 .flex  div:hover, .flex  div p:hover {
     color: #fff;
-}
-
-.flex  div:hover{
-    background-color:rgba(192,192,192,0.6);
-
 }
 
 /*-------------------------------------------------------------------*/
 .home-descr {
     height: 500px;
-    left: 40%;
-    transform: translate(-50%, 0%);
-    position: absolute;
+    width: 700px !important;
     top: 150px;
+    position: absolute;
+    left: 45%;
+    transform: translate(-50%, 0%);
+
 }
 
 .logo-big {
@@ -329,14 +336,16 @@ body {
 
 .slogan{
   font-family: Raleway-Regular;
-
     padding: 10px;
     margin: 50px 0 60px 0;
 }
 
 .slogan span {
     font-size: 1.1rem;
-    width: 100%;
+    width: 500px;
+    height: auto;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 #btn-click {

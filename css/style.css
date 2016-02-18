@@ -132,16 +132,12 @@ html, body {
 /*    font-weight: bold;*/
 }
 
-
-/*-------------------------------------------------------------------*/
-
-
 /*----------------------------*/
 
 .ps-container {
 	position: absolute;
 	width: 90%;
-	height: 750px;
+	height: 100vh;
     min-height: 750px;
     top: 0;
     padding: 0 0px 0 0;
@@ -151,6 +147,7 @@ html, body {
     transform: translate(-40%, 0%);
     position: absolute;
 }
+
 
 .ps-container > div {
 	position: absolute;
