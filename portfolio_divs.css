@@ -126,7 +126,7 @@ h1, h2, h3, h4, a {
 .flex {
     width: 60px;
     height: 410px;
-    top:70px;
+    top: 40px;
     z-index: 999;
 }
 
@@ -144,8 +144,9 @@ h1, h2, h3, h4, a {
 /*    font-weight: bold;*/
 }
 
-.menu-icon {
-
+#hamburger {
+    height: 0px;
+    visibility: hidden;
 }
 
 .menu-title {
@@ -282,12 +283,10 @@ h1, h2, h3, h4, a {
 #con_flex {
     font-family: Raleway-Regular;
     width: 1130px;
-    position: relative;
+/*    position: relative;*/
     padding: 0 !important;
-/*
     position: absolute;
-    top: 220px;
-*/
+    top: 40px;
 }
 
 /*---- The divs ----*/

@@ -276,7 +276,7 @@
     }
 
     .h-flex {
-        width: 370px;
+        width: 300px;
         height: 70px;
     }
 
@@ -390,8 +390,6 @@
         overflow:hidden;
     }
 
-
-
 }
 
 /*----------------------------------------------------------------*/
@@ -462,13 +460,15 @@
 
     #con_flex {
         width: 100% !important;
-        position: relative;
+        padding: 0 !important;
+        position: absolute;
+        top: 90px;
 
     }
 
     .con_pres {
         width: 100%;
-        margin: 0 20px 0 20px;
+        margin: 0 10px 0 10px;
         margin-left: -.4%;
         }
 
@@ -520,11 +520,20 @@
     /*------------------------------*/
     /*Content*/
 
-    .h-nav {
-        height: 70px;
-        width: 100%;
+    .flex {
+        top: 0;
+    }
+
+    #hamburger {
         visibility: visible;
-        margin:20px 0 0 0;
+        margin: 0 20px;
+
+    }
+
+    .h-nav, .h-flex {
+        height: 0px;
+        visibility: hidden;
+
     }
 
     .h-flex {
@@ -551,6 +560,7 @@
         width: 20px;
     }
 
+
     /*----logo----*/
     #portfolio-logo {
         width: 100%;
@@ -567,9 +577,9 @@
 
     .page-title {
         font-family: SlimJoe;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         font-weight: bolder;
-        margin-bottom:0px;
+        margin: 5px 0px 5px 0;
         height: 40px;
         color: white
     }
@@ -593,15 +603,19 @@
 
     #con_flex {
         width: 100% !important;
-        position: relative;
-        margin-top: -30px;
+        padding: 0;
+
 
     }
 
+
+
     /*---- The divs ----*/
     /*Images*/
+
     .con_pres {
         width: 100%;
+        margin: 0;
         margin-left: -.4%;
         }
 
