@@ -19,22 +19,30 @@
 
 .v-nav {
     height: 100vh;
-    width: 100px !important;
+    width: 150px !important;
     height: 100vh;
     text-align: center;
     margin: 0 auto;
 }
 
+.contents{
+    width: calc(100% - 150px) !important;
+    height: 100vh;
+}
+
 .flex {
-    top: 10px;
+    width: 60px;
+    height: 410px;
+    top: 40px;
+    z-index: 999;
 }
 
 .flex div{
-    width: 50px;
-    height: 60px;
+    width: 60px;
+    height: 80px;
     color: #fff;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 35%;
 }
 
 .flex div p {
@@ -42,6 +50,18 @@
     font-size: .8rem;
 /*    font-weight: bold;*/
 }
+
+.flex div:hover, .flex div p:hover {
+    color: #fff;
+
+}
+
+.flex div:hover, .h-flex div:hover{
+/*    background-color:rgba(192,192,192,0.6);*/
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
 
 .strapline {
     font-size: 1rem !important;
@@ -60,26 +80,76 @@
     width: 100%;
 }
 
-.contents{
-    width: calc(100% - 100px) !important;
-    height: 100vh;
+/*Everything*/
+/*------------------------------------------------------------*/
+
+/*-----------horizontal -menu--------*/
+.h-nav {
+    height: 0px;
+    width: 100% !important;
+    position: absolute;
+    visibility: hidden;
 }
 
-/*Everything*/
+.h-flex {
+    width: 420px;
+    height: 70px;
+/*    padding-top: 10px;*/
+
+}
+
+.h-flex div{
+    width: 70px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+.h-flex div p {
+    font-family: Raleway-SemiBold;
+    font-size: .8rem;
+/*    font-weight: bold;*/
+}
+
+.menu-icon-h img {
+   width: 40px;
+}
+
+.menu-icon-h .menu-title {
+/*        visibility: hidden;*/
+    font-size: 0rem;
+}
+
+
+.menu-item {
+/*    visibility: hidden;    */
+}
+
+/*-------------------------------------------------------------------*/
 #contact {
     width: 600px;
-    height: 650px;
+    height: 600px;
+    position: absolute;
+
+    /*center-h*/
+    top: 100px;
+    left: 43%;
+    transform: translate(-50%, 0%);
+
 }
 
 .contact-logo{
-    margin-top: 60px;
+    margin-bottom: 20px;
 
 }
+
 .drop-line {
     font-family: SlimJoe;
     font-size: 2rem;
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: 60px;
 }
 
@@ -87,7 +157,11 @@
 
 }
 
-
+.material-icons.prefix {
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
 
 input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
     color: #ccc !important;
@@ -96,7 +170,7 @@ input[type=text], input[type=password], input[type=email], input[type=url], inpu
     border-bottom: 1px solid #ccc;
     border-radius: 0;
     outline: none;
-    height: 3.5rem;
+    height: 2.7rem;
     width: 100%;
     font-size: 1rem;
     margin: 0 0 15px 0;

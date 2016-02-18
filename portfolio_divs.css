@@ -47,7 +47,7 @@ html, body {
 
     font-family: Raleway-Regular;
 /*    opacity: .3;*/
-    background: url(../slider/overlays/05.png) #555 center center repeat;
+    background: url(../slider/overlays/05.png) #323333 center center repeat;
 /*    background: url(../img/pattern_stripe.png) #000;*/
     color: #555;
     z-index: 0;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, a {
 }
 
 .flex div{
-    width: 50px;
+    width: 60px;
     height: 80px;
     color: #fff;
     text-align: center;
@@ -159,13 +159,14 @@ h1, h2, h3, h4, a {
 /*    visibility: hidden;    */
 }
 
-.flex  div:hover, .flex  div p:hover {
+.flex div:hover, .flex div p:hover {
     color: #fff;
 }
 
-.flex  div:hover{
-    background-color:rgba(192,192,192,0.6);
-
+.flex div:hover{
+/*    background-color:rgba(192,192,192,0.6);*/
+    border: 2px solid #fff;
+    border-radius: 2px;
 }
 
 /*------------------------------------------------------------*/
@@ -218,7 +219,7 @@ h1, h2, h3, h4, a {
     color: #fff;
 }
 
-.flex  div:hover{
+.flex  div:hover, .h-flex div:hover{
     border: 1px solid #fff;
     border-radius: 2px;
 /*
@@ -255,7 +256,7 @@ h1, h2, h3, h4, a {
     width: 100%;
     height: 150px;
     padding: 10px 0 10px 0;
-    margin-bottom: 20px;
+/*    margin-bottom: 20px;*/
 /*    top: 70px;*/
 }
 
@@ -283,10 +284,9 @@ h1, h2, h3, h4, a {
 #con_flex {
     font-family: Raleway-Regular;
     width: 1130px;
-/*    position: relative;*/
+    position: relative;
     padding: 0 !important;
-    position: absolute;
-    top: 40px;
+/*    margin-top: 5px;*/
 }
 
 /*---- The divs ----*/

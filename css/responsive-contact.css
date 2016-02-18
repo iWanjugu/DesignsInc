@@ -10,17 +10,44 @@
 /*---------------------------------------------------------------*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1279px) {
-    #contact {
-        width: 800px;
+    #bt-menu {
+        visibility: hidden;
+    }
 
 }
 /*----------------------------------------------------------------*/
 /*Medium screens*/
 @media only screen and (max-width : 992px){
 
-     #contact {
+    .menu, .contents {
+        position: relative;
+        height: 100vh !important;
+        z-index: 100;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .v-nav {
+        height: 100vh;
+        width: 150px !important;
+        height: 100vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contents{
+        width: calc(100% - 150px) !important;
+        height: 100vh;
+    }
+
+    #contact {
         width: 600px;
         height: 600px;
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%, 0%);
     }
 
     .drop-line {
@@ -38,41 +65,7 @@
         height: 0px;
     }
 
-    .menu, .contents {
-        position: relative;
-        height: 100vh !important;
-        z-index: 100;
-    }
 
-    .menu {
-        width: 100%;
-    }
-
-    .v-nav {
-        height: 100vh;
-        width: 70px !important;
-        height: 100vh;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .contents{
-        width: calc(100% - 70px) !important;
-        height: 100vh;
-        left: -5%;
-    }
-
-    .flex {
-        top: 10px;
-    }
-
-    .flex div{
-        width: 50px;
-        height: 60px;
-        color: #fff;
-        text-align: center;
-        padding-top: 15%;
-    }
 
     .flex div p {
         font-family: Raleway-SemiBold;
@@ -101,71 +94,24 @@
 
 /*----------------------------------------------------------------*/
 /*Medium screens*/
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 769px){
 
-    .v-nav {
-        height: 100vh;
+    .v-nav, .menu {
         width: 0px !important;
-        text-align: center;
-        margin: 0 auto;
-        z-index: 999;
-    }
-
-    .flex {
-        width: 60px;
-        height: 410px;
-        top:0px;
-        z-index: 999;
-        padding-left: 7px;
-
-    }
-
-    .menu-item {
         visibility: hidden;
-        margin-left: 20px;
-    }
-    .menu-icon {
-        margin-left: 20px;
-        visibility: hidden;
-        height: 0px;
-    }
-
-    #hamburger {
-        visibility: visible;
-        height: 50px;
-        margin: 14px 20px 20px 20px;
-    }
-
-
-    .flex div {
-        width: 100%;
-        height: 60px;
-        color: #fff;
-        text-align: center;
-    }
-
-    .flex div img {
-        width: 30px;
-        margin-top: -10px;
-    }
-
-    .flex div p {
-        font-family: Raleway-SemiBold;
-        font-size: .8rem;
-    /*    font-weight: bold;*/
     }
 
     .contents{
         width: 100% !important;
         position: absolute;
         height: 100vh;
-        left: 1%;
+
     }
 
-/*    ----------------------------------*/
+    /*----------------------------------*/
     #contact {
-        width: 100%;
-        height: 500px;
+        width: 90%;
+        top: 100px;
 
         /*center-h*/
         left: 50%;
@@ -173,10 +119,70 @@
         position: absolute;
     }
 
+    /*-----------horizontal -menu--------*/
+
+    .h-nav, .h-flex .menu-item {
+        visibility: visible;
+
+    }
+
+    .h-nav, .contact-logo, .drop-line, .form-area {
+        position: relative;
+
+}
+    .h-nav {
+        height: 70px !important;
+        width: 480px !important;
+        visibility: visible;
+        top: -40px;
+        margin-bottom: 20px;
+    }
+
+    .h-flex {
+        width: 100%;
+        height: 70px;
+    /*    padding-top: 10px;*/
+
+    }
+
+    .h-flex div{
+        width: 70px;
+        height: 80px;
+        color: #fff;
+        text-align: center;
+        padding-top: 25%;
+    }
+
+    .h-flex div p {
+        font-family: Raleway-SemiBold;
+        font-size: .8rem;
+    /*    font-weight: bold;*/
+    }
+
+    .menu-icon-h img {
+       width: 40px;
+    }
+
+    .menu-icon-h .menu-title {
+    /*        visibility: hidden;*/
+        font-size: 0rem;
+    }
+
+
+    .menu-item {
+    /*    visibility: hidden;    */
+    }
+
+    /*------------------*/
+    .contact-logo{
+    margin-bottom: 20px;
+    }
+
     .drop-line {
         font-size: 1.5rem;
         height: 30px;
     }
+
 
     input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
 
@@ -226,9 +232,6 @@
         left: 66px
     }
 
-    .contact-logo {
-        margin: 0;
-    }
     .contact-logo img {
         width: 80px;
         height: 50px;
@@ -237,25 +240,56 @@
 
 /*---------------------------------------------------------------*/
 
-    /* Extra Small Devices, Phones */
-@media only screen and (max-width : 320px) {
-    .contents {
-        left: -1%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    #hamburger {
+        visibility: visible;
+        margin: 20px;
     }
+
+    .flex{
+        top: 0;
+    }
+
+    #hamburger img {
+        width: 50%
+    }
+
 
     #contact {
         width: 100%;
-        height: 500px
+        height: 450px;
+        top: 0px;
+    }
+
+    .h-nav, .h-flex .menu-item {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .contact-logo {
+        margin-bottom: 10px;
+    }
+    .contact-logo img {
+
+        width: 60px;
+        height: 30px;
     }
 
     .drop-line {
-        font-size: .3rem;
-
+        font-size: 1.2rem;
     }
 
-    .material-icons prefix {
-        width: 20px;
+    form .row {
+        width: 95%;
+    }
 
+    .material-icons.prefix {
+        font-size: 1.5rem;
+        text-align: center;
+        width: auto;
+        height: auto;
     }
 
     input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
@@ -263,9 +297,9 @@
     border-bottom: 1px solid #ccc;
     border-radius: 0;
     outline: none;
-    height: 10px;
+    height: .7rem;
     width: 100%;
-    font-size: .3rem;
+    font-size: .5rem;
     margin: 0 0 2px 0;
     padding: 0;
 
@@ -282,38 +316,5 @@
         background-color:rgba(232,122,74,.8);
         font-size: .8rem;
     }
-
-    #github-button {
-        width: 0px;
-        height: 35px;
-        margin-left: 30px;
-        font-size: .8rem;
-
-    /*    text-transform: lowercase;*/
-    }
-
-    #github-button span{
-        position: absolute;
-        top:0px;
-        left: 13px;
-
-    }
-    #github-button img{
-        position: absolute;
-        height: 20px;
-        padding-top: 2px;
-        top: 7px;
-        left: 66px
-    }
-
-    .contact-logo img {
-        width: 60px;
-        height: 30px;
-
 }
 
-/*----------------------------------------------------------------*/
-/* Phones */
-@media only screen and (max-width : 480px) {
-
-}

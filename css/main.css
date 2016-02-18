@@ -199,7 +199,7 @@ body {
 .flex {
     width: 50px;
     height: 410px;
-    top:0px;
+    top: 40px;
 }
 
 .flex div{
@@ -236,10 +236,25 @@ body {
     height: 0px;
 }
 
-.flex  div p:hover {
+.flex div:hover, .flex div p:hover {
     color: #fff;
+
 }
 
+.flex div:hover, .h-flex div:hover{
+/*    background-color:rgba(192,192,192,0.6);*/
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+/*
+.menu-item:hover {
+    background-color: #555 !important;
+     background-color:rgba(192,192,192,0.6)
+}
+*/
+
+/*
 .menu-item.home:hover {
     background-color: teal !important;
 }
@@ -255,6 +270,9 @@ body {
 .menu-item.contact:hover {
     background-color: #E87A4A !important;
 }
+*/
+
+
 
 /*------------------------------------------------------------*/
 /*-----------horizontal - menu--------*/

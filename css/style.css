@@ -109,13 +109,13 @@ html, body {
 .flex {
     width: 60px;
     height: 410px;
-    top: 70px;
+    top: 40px;
     z-index: 999;
 }
 
 .flex div{
-    width: 50px;
-    height: 70px;
+    width: 60px;
+    height: 80px;
     color: #fff;
     text-align: center;
     padding-top: 35%;
@@ -130,6 +130,17 @@ html, body {
     font-family: Raleway-SemiBold;
     font-size: .8rem;
 /*    font-weight: bold;*/
+}
+
+.flex div:hover, .flex div p:hover {
+    color: #fff;
+
+}
+
+.flex div:hover, .h-flex div:hover{
+/*    background-color:rgba(192,192,192,0.6);*/
+    border: 2px solid #fff;
+    border-radius: 2px;
 }
 
 /*----------------------------*/

@@ -103,7 +103,7 @@ body {
 
 .content,
 .loading {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -112,8 +112,9 @@ body {
 }
 
 .content {
-	overflow-y: scroll;
-	height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+/*	overflow-y: scroll;*/
+/*	height: 0;  What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
+    width: 100%;
 	background: #fff;
 	visibility: hidden;
 	z-index: 400;
@@ -137,7 +138,7 @@ body {
 }
 
 .content.show {
-	height: auto;
+	height: 350px;
 	pointer-events: auto;
 	visibility: visible;
 }
@@ -145,16 +146,16 @@ body {
 .content > div {
 	z-index: 10;
 	position: absolute;
-	top: 0;
 	width: 100%;
 	overflow: hidden;
 	height: 0;
 	opacity: 0;
-	background: grey;
+	 background: url(../slider/overlays/05.png) #555 center center repeat;
 }
 
 .content > div.show {
-	height: auto;
+    position: absolute;
+	height: 650px;
 	opacity: 1;
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
@@ -173,15 +174,16 @@ body {
 }
 
 .close-content {
-	position: fixed;
+	position: absolute;
 	z-index: 1000;
-	top: 0;
-	right: 10px;
-	font-size: 1.6em;
+	right: 5px;
+    top: -62%;
+	font-size: 1rem;
+
 	color: #aaa;
 	cursor: pointer;
 	pointer-events: none;
-	padding: 1em;
+	padding: 1rem;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
@@ -201,9 +203,32 @@ body {
 }
 
 /* Dummy content */
+.pop-up {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+/*
+.pop-up.hzippy {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+*/
+
+.pop-up.rtbr {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
 
 .dummy-img,
 .dummy-text {
+    top: 0;
 	max-width: 600px;
 	width: 90%;
 	opacity: 0;
@@ -250,18 +275,24 @@ p.dummy-text:nth-child(3) {
 	transition-delay: 0.2s;
 }
 
+.pop-up-title {
+    margin: 50px;
+}
 .dummy-img {
-	height: auto;
-	background-color: #ddd;
+    width:calc(57% - 4px);
+    height: auto;
+    overflow:hidden;
+	background: url(../slider/overlays/05.png) #555 center center repeat;
 	margin: 30px auto;
 }
 
 .dummy-text {
 	text-align: left;
 	margin: 0 auto;
-	padding: 10px 0;
-	color: #000;
+	padding: 20px 20px;
+	color: aliceblue;
 	font-size: 1em;
+    text-align: justify;
 
 }
 
