@@ -186,7 +186,7 @@ body {
     height: 100vh;
 }
 
-.menu {
+.menu, v-nav {
     width: 150px !important;
     text-align: center;
     margin: 0 auto;
@@ -200,6 +200,7 @@ body {
     width: 50px;
     height: 410px;
     top: 40px;
+    z-index: 1005;
 }
 
 .flex div{
