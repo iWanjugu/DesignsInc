@@ -146,16 +146,16 @@ body {
 .content > div {
 	z-index: 10;
 	position: absolute;
-	width: 100%;
-	overflow: hidden;
-	height: 0;
+	width:150%;
+	height: 100vh;
+    top: 160px;
+    overflow: hidden;
 	opacity: 0;
 	 background: url(../slider/overlays/05.png) #555 center center repeat;
 }
 
 .content > div.show {
     position: absolute;
-	height: 650px;
 	opacity: 1;
 	-webkit-transition: opacity 0.6s;
 	transition: opacity 0.6s;
@@ -205,9 +205,10 @@ body {
 /* Dummy content */
 .pop-up {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
    }
 
 /*
