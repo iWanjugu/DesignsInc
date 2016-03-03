@@ -622,32 +622,52 @@ h1 {
 }
 
 /*--------------------------------------------------*/
-/*Page 2*/
+/*-----------Page 2--------------*/
 
-.page2 {
-    height: 70vh;
+#page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden
+}
+/*---------------*/
+/*about us*/
+#about-us {
+    margin: 0 auto;
+    padding: 0;
+    height: 800px;
     width: 100%;
     background-color: #fff;
     position: relative;
 }
 
-.page2 .row .container {
-    position: relative;
-
-}
 .about {
-    width: 90%;
+    width: 80%;
     height: 400px;
     text-align: center;
+    margin: 0 auto;
 }
 
+.about div {
+    position: relative;
+}
 
+.about h4 {}
 
-/*--------------------------------------------------*/
-/*Page 3 - Footer*/
+.title-underline {
+    width: 100%;
+    height: 1px;
+}
 
-.page3 {
-    height: 30vh;
+.about-content {
+    width: 70%;
+}
+
+/*---------------*/
+/*Footer*/
+
+#footer {
+    height: calc(100% - 800px);
     color: #fff;
     background: #555;
 }
