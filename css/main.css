@@ -27,9 +27,10 @@
 
 /*----------------------------------------------------------------->*/
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5{
     color: #636;
-    font-family: 'Amaranth', sans-serif;}
+    font-family: SlimJoe;
+}
 
 video{
   position:fixed;
@@ -168,6 +169,10 @@ body {
     background: url(../img/pattern_stripe.png);
     z-index: 0;
 
+}
+
+header {
+    height: 100vh;
 }
 
 .cover{
@@ -614,4 +619,35 @@ h1 {
                         blink-caret 1s step-end infinite;
     -moz-animation: typing 17s steps(30, end), /* # of steps = # of characters */
                         blink-caret 1s step-end infinite;
+}
+
+/*--------------------------------------------------*/
+/*Page 2*/
+
+.page2 {
+    height: 70vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.page2 .row .container {
+    position: relative;
+
+}
+.about {
+    width: 90%;
+    height: 400px;
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------------*/
+/*Page 3 - Footer*/
+
+.page3 {
+    height: 30vh;
+    color: #fff;
+    background: #555;
 }
