@@ -634,14 +634,30 @@ h1 {
     position: relative;
 }
 
-.about {
+#about-us h5 {
+    color: #000;
+}
+
+#page2-about, #page2-what-we-do {
+    height: 360px;
+    width: 100%;
+    position: relative;
+}
+#page2-about {
+    margin-top: 50px;
+}
+#page2-what-we-do {
+        margin-top: -80px;
+
+}
+.about, .what_we_do {
     width: 80%;
-    height: 400px;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }
 
-.about div {
+.about div, .what_we_do div {
     position: relative;
 }
 
@@ -652,11 +668,16 @@ h1 {
     height: 1px;
 }
 
-.about-content {
+.about-content, .what_we_do_content {
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:dimgrey;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 20px;
 }
+
+
 
 /*---------------*/
 /*Footer*/
