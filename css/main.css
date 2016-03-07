@@ -620,7 +620,8 @@ h1 {
 #page2 {
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    top: 100vh;
     overflow: hidden;
 }
 /*---------------*/
@@ -639,15 +640,15 @@ h1 {
 }
 
 #page2-about, #page2-what-we-do {
-    height: 360px;
+    height: 320px;
     width: 100%;
     position: relative;
 }
 #page2-about {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 #page2-what-we-do {
-        margin-top: -80px;
+    margin-top: -60px;
 
 }
 .about, .what_we_do {
@@ -670,7 +671,7 @@ h1 {
 
 .about-content, .what_we_do_content {
     width: 80%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color:dimgrey;
     line-height: 1.5rem;
     text-align: justify;
